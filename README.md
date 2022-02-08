@@ -250,9 +250,10 @@ Most of the user interfaces for blockchain applications are programmed using Rea
 
 I believe that React is best learned from the official documentation, but there are also other resources for people that learn better with video content. Here is a list of React learning resources that I recommend:
 - [React in 100 Seconds - Fireship](https://www.youtube.com/watch?v=Tn6-PIqc4UM)
+- [React roadmap](https://roadmap.sh/react)
 - [Official React documentation](https://reactjs.org/docs/getting-started.html)
 - [awesome-react](https://github.com/enaqx/awesome-react) - This GitHub repository aggregates many useful resources for React developers, it has tutorials, tooling, component libraries, frameworks, design patterns, guidelines and much more. It is a good place to look for inspiration and resources when using React.
-- If you want a paid video course I can recommend either [ZTM's React course](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/) or [Maximilian Schwarzmuller's React course](https://www.udemy.com/share/101Wby3@JDt64oz7fMQjMAWBtrmk5wuDfzeEWDYkQeRN1yCa5yjMEWG0cKPDILlqSqtSXEI7/). On Udemy there are sales periods every once in a while which allow you to buy courses for $15 instead of $200, so wait for one of those, never buy for the full price.
+- If you want a paid video course I can recommend either [ZTM's React course](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/) or [Maximilian Schwarzmuller's React course](https://www.udemy.com/share/101Wby3@JDt64oz7fMQjMAWBtrmk5wuDfzeEWDYkQeRN1yCa5yjMEWG0cKPDILlqSqtSXEI7/). On Udemy there are sales periods every once in a while which allow you to buy courses for `$15` instead of `$200`, so wait for one of those, never buy for the full price.
 - [freeCodeCamp React course on YT](https://youtu.be/bMknfKXIFA8)
 
 After you feel like you've understood how React works, you have learned about lifecycle methods, hooks, how to pass down data through props, how to use the Context API, etc. I recommend trying to build the front end of a web3 app like Uniswap or an NFT marketplace like OpenSea. To rapidly prototype the design I recommend using [tailwind.css](https://tailwindcss.com) and Chrome browser developer tooling to inspect the styles of the site you're trying to recreate. Also don't forget to use CSS flexbox / grid where necessary. Try to simulate the data inside of these apps using hardcoded JSON objects.
@@ -279,9 +280,9 @@ I recommend going to the [Typescript documentation](https://www.typescriptlang.o
 - [Moralis documentation](https://docs.moralis.io/moralis-server/getting-started)
 - [Moralis YT channel](https://www.youtube.com/c/MoralisWeb3)
 
-#### ethers.js
+#### Web3 libraries
 
-[Ethers.js](https://docs.ethers.io/) is a library for interacting with the Ethereum Blockchain and its ecosystem. Smart contracts that are deployed on the Ethereum blockchain have functions which can be called externally by any other account on Ethereum, be it an externally owned account (EOA = user wallet) or another smart contract. Many of these functions require certain parameters to be fed into them, they also rely oftentimes on external state like prices of tokens on the blockchain, balances of the user's wallet and more. Ethers.js is what allows a user interface to call these functions, users can input certain information in the frontend of your application and that information can be put into the function call of the smart contract, after the transaction is broadcasted the EVM will try to execute that function call and if every check inside of the function doesn't give out any errors it will execute, otherwise the transaction will revert.
+[Ethers.js](https://docs.ethers.io/) is one of the most popular libraries for interacting with the Ethereum Blockchain and its ecosystem. Smart contracts that are deployed on the Ethereum blockchain have functions which can be called externally by any other account on Ethereum, be it an externally owned account (EOA = user wallet) or another smart contract. Many of these functions require certain parameters to be fed into them, they also rely oftentimes on external state like prices of tokens on the blockchain, balances of the user's wallet and more. Ethers.js is what allows a user interface to call these functions, users can input certain information in the frontend of your application and that information can be put into the function call of the smart contract, after the transaction is broadcasted the EVM will try to execute that function call and if every check inside of the function doesn't give out any errors it will execute, otherwise the transaction will revert.
 
 Ethers.js is currently the most popular Ethereum library among developers, but there are alternatives like web3.js, web3.py, Brownie, and many others. The second most popular framework is web3.js and it is the Ethereum JavaScript library that has been around the longest. For a comparison of ethers.js and web3.js read [this article](https://moralis.io/web3-js-vs-ethers-js-guide-to-eth-javascript-libraries/) written by the Moralis developer team.
 
@@ -312,14 +313,58 @@ You can build your own templates depending on your needs, or modify already exis
 As a developer there are many tools you'll use to make building applications easier and more efficient, to collaborate on projects with other people, to manage dependencies, and much more. This is a short section on different tooling you'll find yourself using regularly.
 
 **Package management**
-If you've gotten this far in the front-end specialization you've certainly had to install packages like React, Next.js, tailwind.css, ethers.js, and many others. The most popular package managers in the JavaScript ecosystem are `npm` and `yarn`. Package managers allow you to keep track of which versions of which external code libraries your application uses as well as how the project's code is structured, how to run different tests, how to run your program, and various miscellaneous tasks. 
 
-**Styling**
+If you've gotten this far in the front-end specialization you've certainly had to install packages like React, Next.js, tailwind.css, ethers.js, and many others. The most popular package managers in the JavaScript ecosystem are `npm` and `yarn`. Package managers allow you to keep track of which versions of which external code libraries your application uses as well as how the project's code is structured, how to run different tests, how to run your program, and various other miscellaneous tasks. 
+
+As you build more complex applications it is good to learn the depths of your package manager, how to structure `package.json` files, how to write scripts that automate the boring stuff, how to set up a CI/CD pipeline (we'll talk about this in a bit), and more.
+
+- [Package management basics](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Package_management)
+- [npm](https://www.npmjs.com/)
+- [yarn](https://yarnpkg.com/)
+
+**Styling/Animation**
+
+There are many CSS libraries and frameworks which modify the way in which you write CSS. There's libraries that allow you to write CSS within JavaScript, component libraries for React which have a lot of the styling done for you, animation libraries and more. I'll mention a few of the most popular ones, feel free to suggest changes as I'm not an expert in the area.
+
+- [styled-components](https://www.styled-components.com/) (CSS in JS)
+- [Tailwind.css](https://tailwindcss.com/) (CSS framework)
+- [Framer Motion](https://www.framer.com/motion/) (Animations framework)
+- [Chakra UI](https://chakra-ui.com/) (component library)
+- [Material UI](https://mui.com/) (component library)
+- [Sass](https://sass-lang.com/) (CSS pre-processor)
+- [PostCSS](https://postcss.org/) (CSS pre-,post-processor)
+- [awesome-CSS](https://github.com/awesome-css-group/awesome-css) (CSS learning repo)
+
+**Linting/Formatting**
+
+A linter is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs and a code formatter makes sure that the code you write has a homogenous style structure and abides by the formatting rules of a specific programming language (i.e. [PEP8](https://www.python.org/dev/peps/pep-0008/) for Python). When you're writing code, it's easy to miss a space, a tab, a colon, an opening or closing bracket, or to write code with bad and inconsistent styling. That's where linters and formatters will come in handy as they automate the task, they can be configured to run on save and on commit, so that badly styled code never gets into production or into a public repo. The most popular choices are:
+
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 
 **CI/CD**
 
+CI/CD stands for continuos integration / continuous deployment, they are a set of tools which allow you to create automatic processes that execute whenever a change is made to the codebase usually hosted on the cloud so that the production servers running your application get automatically updated with the newly pushed code. These actions can also modify and run tests on the code before it gets pushed into production, if tests fail the commit or update will not go through and collaborators will get notified of this. Once projects become bigger and they have big teams of contributors a solid CI/CD pipeline is very important so as to maximize security and correctness of code being pushed into production. Examples of popular CI/CD tooling are:
+
+- [GitHub Actions](https://github.com/features/actions)
+- [CircleCi](https://circleci.com/)
+- [Husky](https://typicode.github.io/husky/#/)
+
 **Testing**
 
+A key part of development is mitigating how many bugs are inside of your application. To ensure that the code behaves as it is intended to we write [unit tests](https://en.wikipedia.org/wiki/Unit_testing), [integration tests](https://en.wikipedia.org/wiki/Integration_testing) or even [end-to-end tests](https://www.browserstack.com/guide/end-to-end-testing). Each kind of test focuses on a different part of the application lifecycle. Modern tooling like Cypress allow you to simulate all possible states of your application and simulate user flows, you can even record user session tests as if you were recording a real user going through your webiste. In web3 you will also be doing integration tests for smart contract interaction. You can test smart contracts using libraries like [Foundry](https://github.com/gakonst/foundry), [Hardhat](https://hardhat.org/) or [Truffle](https://trufflesuite.com/). Most of these tests will be written by a smart contract or fullstack developer, however as a frontend developer you need to test how the interactions with the contracts will influence the flow of the user interface of your application. You can write various tests in JavaScript with ethers.js and couple it with Cypress to write complex tests. The web3 app development lifecycle usually goes from locally deployed smart contracts and front-end, to testnets (live network environment, but with non-valuable assets), and to mainnet (not necessarily Ethereum mainnet, it can be an L2 like Arbitrum, a sidechain like Polygon PoS, etc). On the smart contract side development teams hire external security auditors to verify that the contracts are secure to use, we will cover this in depth in the [smart contract development section](#smart-contract-development). 
+
+- [Cypress](https://www.cypress.io/)
+- [Jest](https://jestjs.io/)
+- [Mocha](https://mochajs.org/)
+
+#### Further learning and development
+
+By now you have learned a solid technology stack which can enable you to build all kinds of user interfaces for web3 apps. In order to really engrain these technologies you need to build pet projects or join a team full-time, even if you only know a few of them you can join a team and get upscaled there as your learning will be supercharged by more experienced coworkers that will act as mentors most of the times. The front end development landscape is constantly evolving a new technologies will come and go, it is in your best interest to look at trends in the industry and try adapting them once they is a clear sign of them becoming adopted. You will keep improving your technology stack over time especially as you become more senior and you are able to reason why you want to use a tool over the other and how it fits into the needs of the applications that you are building. 
+
+Build, Build, Build! Try creating small projects that implement ideas you come up with and practice the technologies you want to master. Also don't be shy to ask questions to other web3 developers, and form learning groups with your friends, or other industry members.
+
+Also read over the [Getting a Job](#getting-a-job) and [Mastery](#mastery) sections of this guide to get more insight into soft skills which are useful to learn to grow as a developer.
 ### Smart contract development
 
 #### Solidity
