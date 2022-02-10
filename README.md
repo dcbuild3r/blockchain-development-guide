@@ -115,9 +115,7 @@ In order to learn the basics of Ethereum, go through the [ethereum.org documenta
 - [Governance / EIP process](https://ethereum.org/en/governance/)
 - **Ethereum roadmap - Endgame**
 
-This graphic shows all the different changes which are being implemented to Ethereum in the upcoming years. It's not necessary to understand what this is all about, but it is good to know about. I suggest watching the video resource appended after the graphic to learn more about what these flowcharts mean.
-  ![ethereum roadmap](./images/ethereum_roadmap.png)
-  - [Endgame - Bankless w/ Vitalik Buterin](https://www.youtube.com/watch?v=b1m_PTVxD-s)
+[This graphic](https://github.com/dcbuild3r/blockchain-development-guide/blob/main/images/ethereum_roadmap.png) shows all the different changes which are being implemented to Ethereum in the upcoming years. It's not necessary to understand what this is all about, but it is good to know about. I suggest watching the video resource appended after the graphic to learn more about what these flowcharts mean.
 
 - **Further reading**
   - [Ethereum Whitepaper](https://ethereum.org/en/whitepaper/)
