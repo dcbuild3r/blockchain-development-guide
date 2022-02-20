@@ -427,6 +427,10 @@ The library is written in Rust, which is a systems-level programming language th
 
 **HardHat**
 
+[Hardhat](https://hardhat.org/) is the Ethereum development library that’s the most widely used across the ecosystem and is the standard in most production codebases like Aave, Uniswap, and many others. Usually, all the deploy scripts, migration files, automation scripts, etc are written using Hardhat and their tooling suite. It is a javascript library (that has Typescript support). Recently the Hardhat team announced that they are moving their infrastructure to Rust as most of the tooling ecosystem is moving to use it do its performance and security.
+
+
+**Dapptools**
 [Dapptools](https://github.com/dapphub/dapptools)  is a suite of Ethereum focused CLI tools following the Unix design philosophy, favoring composability, configurability, and extensibility.
 
 There are 4 key elements in dapptools:
@@ -438,12 +442,18 @@ There are 4 key elements in dapptools:
 A cool innovation done by app tools was the hevm which is an EVM implementation written in Haskell (a functional programming language) which allows to symbolically execute Solidity code and formally verify the results of the resulting bytecode (opcode operations). This feature was later adopted by Foundry, including many others that were first provided by dapptools.
 
 
-**Dapptools**
+**Truffle Suite**
+
+[Truffle Suite](https://trufflesuite.com/) is a suite of tools developed by Consensys to locally test smart contracts by deploying them on a local instance of the Ethereum blockchain, mocking user addresses using the Ganache library, writing tests using Truffle, and creating on-chain data pipelines for user interfaces using Drizzle. It was one of the first complete Ethereum developer tooling ecosystems that were released, but they’ve fallen out of favor in recent years as libraries like Hardhat overtook it.
+
+
 
 #### Design patterns
-Once you're comfortable with writing more and more complex contracts and maybe taking a look at the front-end code and it interacts with the smart contracts, you'll start getting a feel for how smart contracts are designed from a more high-level view. There are certain designs and patterns which are commonplace, things like the approve pattern for tokens, and more. At this point it is a good idea to start thinking more about 
+Once you're comfortable with writing more and more complex contracts and maybe taking a look at the front-end code and it interacts with the smart contracts, you'll start getting a feel for how smart contracts are designed from a more high-level view. There are certain designs and patterns which are commonplace, things like the approve pattern for tokens, and more. At this point it is a good idea to start thinking more about the overall architecture of your code and the structure that it will take to efficiently implement the functionality you want to enable.
 
-Since the EVM is such a constrained environment where each additional operation executed by the EVM add gas costs to the execution of the smart contract, developers try to build as least resource-intensive contracts as possible whilst also maximizing for readability and security. Since blockchains are a very adversarial environment where mistakes in a smart contracts could lead to fund drains and exploits, it can be considered mission critical
+There are common patterns employed in smart contract development, this [Solidty-patterns](https://github.com/fravoll/solidity-patterns) repo implements some of them.
+
+Since the EVM is such a constrained environment where each additional operation executed by the EVM add gas costs to the execution of the smart contract, developers try to build as least resource-intensive contracts as possible whilst also maximizing for readability and security. Since blockchains are a very adversarial environment where mistakes in a smart contracts could lead to fund drains and exploits, it can be considered mission-critical software and so many developers get inspiration from other mission-critical software guidelines like the ones of NASA which are responsible for the lives of astronauts going to space. These development principles are guidelines that help optimize a codebase for maximum security through the adoption of a standardized procedure and developer mindset.
 
 #### Specialized languages
 
@@ -453,9 +463,7 @@ Since the EVM is such a constrained environment where each additional operation 
 
 ### Backend development
 
-
 ### Full-stack blockchain development
-
 
 ### Core development
 
