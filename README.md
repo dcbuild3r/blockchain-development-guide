@@ -38,28 +38,29 @@ There are different sets of skills required for different specializations, the t
 
 This guide will cover these main tracks, however anyone is free to submit a pull-request to add more or expand on the already existing ones:
 
-- Core development
-- Smart contract development
-- Backend blockchain development
-- Frontend development
-- Full-stack blockchain development
-- Security engineers
-- MEV searcher
-- Protocol development
-- Cryptographer
+
+- [Frontend development](#front-end-development)
+- [Smart contract development](#smart-contract-development)
+- [Backend blockchain development](#backend-development)
+- [Full-stack blockchain development](#full-stack-blockchain-development`)
+- [Core development](#core-development)
+- [Security engineer](#security-engineer)
+- [MEV searcher](#mev-searcher)
+- [Protocol development](#protocol-development)
+- [Cryptographer](#cryptographer)
 
 #### Application-based
 
 Another way to separate types of blockchain development is not based on the underlying tech stack, but on the use case that you are targeting. These are the categories that I believe are the most popular, however there's many others which I'm not covering to keep the scope of this article more manageable. 
 
-- DeFi
-- NFTs / Creator economy / Metaverse
-- MEV
-- L2s
-- Infrastructure
-- Gaming
-- Privacy
-- Coordination / Public goods
+- [DeFi](#defi)
+- [NFTs / Creator economy / Metaverse](#creator-economy)
+- [MEV](#mev)
+- [L2s](#l2s)
+- [Infrastructure](#infrastructure)
+- [Gaming](#gaming-development)
+- [Privacy](#privacy)
+- [Coordination / Public goods](#coordination--public-goods)
 
 ## How to get started?
 
@@ -424,6 +425,7 @@ Opinionated recommendations: Foundry and Hardhat
 
 Foundry is composed of two parts: Forge and Cast. 
 - **Forge:** Forge is a fast and flexible Ethereum testing framework, inspired by Dapptools.
+
 - **Cast:** Swiss army knife for interacting with EVM smart contracts, sending transactions, and getting chain data.
 
 The library is written in Rust, which is a systems-level programming language that has memory safety, borrow checking, performant concurrency, and many other features which are making it one of the favorite languages used by developers across all fronts. Many popular libraries are being written in Rust, popular compiler targets like WASM are supported by Rust, a lot of Ethereum developer tooling is built using Rust or is refactoring their infrastructure to use Rust. It is a very exciting trend in blockchain development and many developers are learning the language to be able to contribute to these cool pieces of software. The best way to get started with Rust is [The Rust Book](https://doc.rust-lang.org/book/) and the [Rustlings repo](https://github.com/rust-lang/rustlings/).
@@ -434,6 +436,7 @@ The library is written in Rust, which is a systems-level programming language th
 
 
 **Dapptools**
+
 [Dapptools](https://github.com/dapphub/dapptools)  is a suite of Ethereum focused CLI tools following the Unix design philosophy, favoring composability, configurability, and extensibility.
 
 There are 4 key elements in dapptools:
@@ -490,7 +493,7 @@ As far as blockchain development goes, most of the logic that traditional applic
 
 This image was created by my fren [Nader Dabit](https://twitter.com/dabit3) who is a full-stack blockchain developer that has created many useful guides, some of which I'll feature in the full-stack development section. This web3 stack landscape graphic comes from a recent blog post of his called [The complete guide to full stack web3 development](https://dev.to/dabit3/the-complete-guide-to-full-stack-web3-development-4g74).
 
-![clipboard.png](inkdrop://file:MHCsFHnz1)
+![web3 stack.png](./images/web3_stack.jpeg)
 
 #### Decentralized File Storage
 
@@ -602,6 +605,8 @@ As a developer you can also create your own databases and API endpoints to fetch
 
 #### Frontrunning
 
+#### Creator economy
+
 #### Backrunning 
 
 ### Security
@@ -642,22 +647,4 @@ As a developer you can also create your own databases and API endpoints to fetch
 ## Conclusion
 
 ## Special thanks
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
