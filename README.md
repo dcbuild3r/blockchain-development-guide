@@ -1,4 +1,4 @@
-# Devpill -  Blockchain Development Guide
+# Devpill - A Public Good Blockchain Development Guide
 
 ## Introduction
 
