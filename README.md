@@ -45,6 +45,7 @@ This guide will cover these main tracks, however anyone is free to submit a pull
 - [MEV searcher](#mev-searcher)
 - [Protocol development](#protocol-development)
 - [Cryptographer](#cryptographer)
+- [Blockchain data analytics](#blockchain-data-analytics)
 
 #### Application-based
 
@@ -665,7 +666,13 @@ Coming soon.
 
 Coming soon.
 
+### Blockchain data analytics
+
+Coming soon.
+
 ## Application-based development
+
+Coming soon.
 
 ### DeFi
 
@@ -733,6 +740,8 @@ If you manage to demonstrate mastery of any given skill within web3, then you ar
 
 ## Mastery / Soft Skills
 
+Coming soon.
+
 ### Strategy
 
 ### Learning resources
@@ -742,6 +751,8 @@ If you manage to demonstrate mastery of any given skill within web3, then you ar
 ### Achieving mastery
 
 ## Social capital
+
+Coming soon.
 
 ### How to build a reputation as a builder
 
