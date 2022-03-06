@@ -1,4 +1,4 @@
-# Blockchain Development Guide
+# Devpill -  Blockchain Development Guide
 
 ## About me
 
@@ -12,7 +12,7 @@ Nowadays there are countless well-made resources on how to learn blockchain deve
 
 This guide will focus on the Ethereum ecosystem as that's where most developers and applications are. If you are interested in other ecosystems that are non-EVM compatible and are not L2s on Ethereum, then check out their respective documentation or guides written by their developer communities. Examples of other non-EVM compatible blockchains that are popular are Solana (Rust/Anchor), Polkadot (Rust/Substrate), Cosmos, Terra, and others. Most of these blockchains do or will support the EVM stack through various initiatives like Neon EVM (Solana), Moonbeam/Moonriver (Polkadot/Kusama), EVMOS (Cosmos), etc.
 
-I really want this guide to become a community-sourced resource that everyone will be able to take advantage of. I will do my best to present it to the wider blockchain developer community to get constructive feedback, proofreading help, and insight into how to make it the best available guide available. 
+I really want this guide to become a community-sourced public good that everyone will be able to take advantage of. I will do my best to present it to the wider blockchain developer community to get constructive feedback, proofreading help, and insight into how to make it the best available guide available. 
 
 ### What is blockchain development?
 
@@ -55,8 +55,6 @@ This guide will cover these main tracks, however anyone is free to submit a pull
 #### Application-based
 
 Another way to separate types of blockchain development is not based on the underlying tech stack, but on the use case that you are targeting. These are the categories that I believe are the most popular, however, there are many others that I'm not covering to keep the scope of this article more manageable. 
-
-
 
 **Coming soon**
 
