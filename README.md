@@ -1,11 +1,5 @@
 # Devpill -  Blockchain Development Guide
 
-## About me
-
-I'm DCBuilder and I'm currently a researcher at Moralis, a web3 development platform. I'm currently learning blockchain development and building demo projects. In this process, I have come around many different resources and I wanted to create a guide for anyone that might be going through the same process by leveraging my research skills.
-
-I've been coding since I was 14 and got really interested in technology in order to maximize the amount of positive impact I have on the world. After having tried web development, AI/ML, and a few others I eventually stumbled upon blockchain development. It was a completely new world to me, unlike other technologies which had pretty straightforward learning paths and specializations it felt that developing on top of blockchains was very hard to get into (this was in early 2018 all the way to 2020), so I decided to learn about how blockchains work in general and the types of applications that are built on top first before learning how to build them. Looking back that might not have been the best decision, but it led me to where I am now.
-
 ## Introduction
 
 Nowadays there are countless well-made resources on how to learn blockchain development of all kinds and with different specializations in mind, however, it is still very hard to get guidance and personalized suggestions based on your interests. I am writing this guide in order to provide an aggregator of all the resources that I've found over the years, plus give some opinionated commentary on how to approach them and how to use them in order to maximize learning and practical understanding in order to get building cool things in the space as soon as possible.
