@@ -495,7 +495,6 @@ Writing Yul or inline assembly can obfuscate the functionality of your code by m
 
 ### Backend development
 
-
 As far as blockchain development goes, most of the logic that traditional applications would consider backend is encapsulated within smart contracts, however, there are also complementary technologies that allow you to query data from blockchains, index the data, create databases so that you have on-demand data from custom APIs, decentralized storage for content, user authentication / DID, etc. I wouldn't consider this its own specialization, but it is a sufficiently unique skill set for me to cover it separately. 
 
 This image was created by my fren [Nader Dabit](https://twitter.com/dabit3) who is a full-stack blockchain developer that has created many useful guides, some of which I'll feature in the full-stack development section. This web3 stack landscape graphic comes from a recent blog post of his called [The complete guide to full-stack web3 development](https://dev.to/dabit3/the-complete-guide-to-full-stack-web3-development-4g74).
@@ -557,9 +556,11 @@ DID (decentralized identity) and web3 user authentication are a disruptive new p
 Many application builders have already adopted this signature standard for building applications on Ethereum as it streamlines the process for everyone and makes it more seamless for users since they have easily readable signatures from [EIP-191](https://eips.ethereum.org/EIPS/eip-191). The aim of this EIP specification is to create a login standard similar to how web2 login with Google and Facebook became catalysts for adoption.
 
 #### Automation
+
 Within blockchain applications there are many actions that are repetitive and cumbersome to execute, for example, having to change the liquidity provision ranges inside of an active Uniswap v3 liquidity provision strategy, claiming rewards from yield vaults, and many other actions that users would like to automate so as to not have to deal with manual execution overhead.
 
 **Gelato network**
+
 [Gelato Network](https://www.gelato.network) is an automation protocol that runs as a decentralized network of bots used by web3 developers to automate smart contract executions on public EVM compatible blockchains including Ethereum, Polygon, Fantom, Arbitrum, Binance Smart Chain, and Avalanche.
 
 In order to get started automating tasks inside of your application check out the [official Gelato documentation](https://docs.gelato.network/guides/tutorial) which has tutorials on how to set up bots to regularly execute any given task in exchange for a small transaction fee.
@@ -568,6 +569,7 @@ The setup inside of the contract function that you want bots to run would look s
 ![gelato.png](./images/gelato.png)
 
 #### Miscellaneous APIs
+
 When building applications you will want to display miscellaneous information from various different other applications or protocols, e.g. price feeds for different tokens on different AMMs, the price of NFTs listed on different marketplaces, various data from services your application relies on, etc. As a backend developer, your responsibilities are to know where you can find reliable sources of data for your application and build the infrastructure needed to fetch it so that frontend developers can display it on the site. It is also important to build redundancy of the data you query and store it in your own databases in order to prevent your application from failing in the case of API dependency failure.
 
 
@@ -578,7 +580,21 @@ As a developer, you can also create your own databases and API endpoints to fetc
 
 ### Full-stack blockchain development
 
+#### Building and deploying on L2s
+
+#### Optimism
+
+#### Arbitrum
+
+#### zkSync
+
+#### Starknet / StarkEx
+
+WIP
+
 ### Core development
+
+Coming soon.
 
 #### Computer science
 
@@ -590,16 +606,21 @@ As a developer, you can also create your own databases and API endpoints to fetc
 
 ### MEV searcher
 
+Coming soon.
+
 ### Security engineer
+
+WIP
 
 ### Cryptographer
 
 ### Protocol development
 
-
 ## Application-based development
 
 ### DeFi
+
+WIP
 
 #### Lending/Borrowing
 
@@ -617,25 +638,43 @@ As a developer, you can also create your own databases and API endpoints to fetc
 
 #### Backrunning 
 
-### Security
-
-### Cryptography
-
 ### Gaming development
-
-### L2s
 
 ### Coordination / Public Goods
 
 ## Getting a job
 
+Once you start having a solid foundational skillset within blockchain development you can start looking for junior positions in your area of interest. One of the best parts of web3 is that many projects have open-source codebases which make it much easier to contribute to. There are various structures in web3 that allow a developer to get paid for their work, some of them are:
+- working for a company that is building a web3 product
+- getting grants from Gitcoin or several different DAOs
+- being a DAO core contributor and getting paid with bounties
+
+The easiest way to find a job is being active in the social platforms of the projects you'd like to be hired at or contribute to, e.g. if you want to become a smart contract developer at Uniswap, then talk to the team on Discord, suggest them new features, implement mockups, apply for a grant and if you are good enough someone will notice and try to hire you to work on it full-time within the DAO itself or for Uniswap Labs which is the core team leading the smart contract development efforts. The most important thing is to show initiative, being proactive and openly talking about helping. If you come across something interesting also don't forget to post it on Twitter or on Telegram. 
+
+In order to find interesting projects to work for, web3 devs look at Twitter as it's the place where everything unfolds and where every single project lives. If you build out a reputation as a good blockchain developer, then you'll start getting DMs from interesting people and projects as there is an extreme lack of talent in the space and insatiable demand for good developers.
+
+
 ### Portfolio
+
+In order to become a good job candidate, it is almost imperative to have a portfolio of projects that you've built in order to showcase the skills you have, the technologies you use and your thought processes behind solving different problems. I.e. if you are interested in building DeFi applications then you can showcase that by writing a demo of an AMM, a yield aggregator, a money market, etc. The more high quality demo projects you have the better as these will act as valuable information for teams looking to hire. The most popular way to showcase your projects is to publish them publicly on [GitHub](https://github.com/).
+
+If you don't know what to build you can look at different problems different projects are facing, try solving one of them and publishing the solution as a public repo on GitHub. You can build demo projects from sites like [SpeedRunEthereum](https://speedrunethereum.com/) using templates like scaffold-eth, and much more. 
 
 ### Job boards
 
+The two most used platforms to find crypto/web3 jobs are Twitter and a few select job boards. The main job boards used by recruiters and workers are:
+
+- [crypto.jobs](https://crypto.jobs/)
+- [cryptojobslist.com](https://cryptojobslist.com/)
+- [bankless job pallet](https://bankless.pallet.com/jobs)
+
 ### Twitter
 
-## Mastery
+Twitter is the place to find a blockchain development job, LinkedIn is rarely used for hiring talent in the space, although it's not too uncommon either. As most of the web3/crypto culture resides on Twitter, it is a natural place for developers, founders, creators and users to hangout together. The more value you provide to the community, the more following you'll get, therefore the more outreach as a developer. All teams are thirsty for good developers and so the more relevant followers you have, the more chances you'll get of being discovered by a team looking to hire a blockchain developer in your field of expertise. Building up your Twitter reputation can propel you forwards more than you'd expect, a lot of friendships, partnerships and collaborations have been initiated through Twitter and it is currently the place to account for social value (clout) in the space.
+
+If you manage to demonstrate mastery of any given skill within web3, then you are guaranteed a position pretty much anywhere as all teams are looking for talent. If you are just starting out, but you show a strong drive and initiative to learn then many teams will ask to take you under their wing in order to upscale your skills by getting your hands dirty and learning while building as you go. By being active on relevant social platforms like Twitter, Discord and Telegram and socializing with the right people, finding a job becomes relatively easy as everyone is looking to hire talent. 
+
+## Mastery / Soft Skills
 
 ### Strategy
 
@@ -654,4 +693,3 @@ As a developer, you can also create your own databases and API endpoints to fetc
 ## Conclusion
 
 ## Special thanks
-
