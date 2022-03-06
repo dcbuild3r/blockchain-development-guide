@@ -195,6 +195,14 @@ When you decentralize the services and become a sovereign user, you can't be de-
 
 In a web3 world, users own their assets, their money, their identity, and their data. This allows for a better user experience fundamentally, and even practically once these technologies become mature enough to support the masses. You can eventually have applications like decentralized social networks where users own their content, artists and musicians can produce their artwork and sell it as NFTs and get revenue from royalties and better engaging with their audiences, you can have virtual worlds where people own their digital identity, their virtual items, and their land, etc. The possibilities in web3 are growing day by day and I think it is one of the most exciting technologies that humankind has ever devised. It unlocks so much potential. 
 
+### Web3 values
+
+The web3 movement is one about creating a value layer for the internet where we can setup incentive structures for the betterment of society in order to make a fairer world where access to products and services is openly distributed, permissionless and accessible to everyone on the planet no matter their provenance. 
+
+There are many good initiatives like [Kernel](https://kernel.community/en/), [Gitcoin](https://gitcoin.co/), [GreenPill](https://greenpill.party/) and many others that try to help educate about and fund the new wave of public goods and inrastructure in order to create a better world. As a blockchain developer, it is good to get a feeling for why these systems are built out in the first place and the values the products and services we create embody so as to not recreate the  centralized web2 world we currently have. 
+
+In order to learn more about web3 values and how we can create a fairer world, go over [Kernel's web3 lessons](https://kernel.community/en/learn/).
+
 ### Play around
 
 Blockchain development might feel overwhelming, and frankly very intimidating when you are starting out. To remedy this feeling, I suggest you look at programming on blockchains like an adventure game. You can explore what is possible, experiment by creating small projects with technologies that you find interesting, looking at what other people are building and interacting with their applications, debate with various people about their favorite applications, technologies and get a feel for how everything works. 
