@@ -42,7 +42,10 @@ This guide will cover these main tracks, however anyone is free to submit a pull
 - [Frontend development](#front-end-development)
 - [Smart contract development](#smart-contract-development)
 - [Backend blockchain development](#backend-development)
-- [Full-stack blockchain development](#full-stack-blockchain-development`)
+- [Full-stack blockchain development](#full-stack-blockchain-development)
+
+**Coming soon**
+
 - [Core development](#core-development)
 - [Security engineer](#security-engineer)
 - [MEV searcher](#mev-searcher)
@@ -53,8 +56,12 @@ This guide will cover these main tracks, however anyone is free to submit a pull
 
 Another way to separate types of blockchain development is not based on the underlying tech stack, but on the use case that you are targeting. These are the categories that I believe are the most popular, however, there are many others that I'm not covering to keep the scope of this article more manageable. 
 
+
+
+**Coming soon**
+
 - [DeFi](#defi)
-- [NFTs / Creator economy / Metaverse](#creator-economy)
+- [Creator Economy](#creator-economy)
 - [MEV](#mev)
 - [L2s](#l2s)
 - [Infrastructure](#infrastructure)
@@ -428,12 +435,28 @@ Opinionated recommendations: Foundry and Hardhat
 [Foundry](https://github.com/gakonst/foundry) is the hottest library in the Ethereum development landscape, it is originally built by Georgios Konstantopoulos who is one of the most highly respected developers in the entire Ethereum ecosystem. Georgios is currently the CTO at Paradigm and part of his job is building tools for developers that will be used to create the applications of the future.
 
 Foundry is composed of two parts: Forge and Cast. 
-
 - **Forge:** Forge is a fast and flexible Ethereum testing framework, inspired by Dapptools.
-
 - **Cast:** Swiss army knife for interacting with EVM smart contracts, sending transactions, and getting chain data.
 
 The library is written in Rust, which is a systems-level programming language that has memory safety, borrow checking, performant concurrency, and many other features which are making it one of the favorite languages used by developers across all fronts. Many popular libraries are being written in Rust, popular compiler targets like WASM are supported by Rust, a lot of Ethereum developer tooling is built using Rust or is refactoring their infrastructure to use Rust. It is a very exciting trend in blockchain development and many developers are learning the language to be able to contribute to these cool pieces of software. The best way to get started with Rust is [The Rust Book](https://doc.rust-lang.org/book/) and the [Rustlings repo](https://github.com/rust-lang/rustlings/).
+
+The reason why Foundry is getting a lot of popularity and it is so important, is because Solidity tests should be written in Solidity and not in JavaScript. It is very hard to master two different languages at once and Solidity developers shouldn't be forced to learn it in order to be able to test their smart contracts. Foundry is also getting an increasingly superior development environment in terms of features. The main features for which you might use other toolkits are mainly deployment which is not supported by Foundry so far. For managing deployments, the standard toolkit is HardHat. For testing, gas optimization features, fuzzing, symbolic execution (hevm), etc, do use Foundry. Good resources for learning and mastering Foundry are:
+- [The Foundry Book](https://onbjerg.github.io/foundry-book/) - Community sourced documentation
+- [Tweet from @andreasbigger](https://twitter.com/andreasbigger/status/1500209878433894400?s=20&t=5HKeV0q_h3Z3QoRvlkO_hQ):
+  - Familiarize yourself w/ [Forge-cli](https://github.com/gakonst/foundry/blob/master/cli/README.md)
+  - Checkout some templates:
+    - [FrankieIsLost forge template](https://github.com/FrankieIsLost/forge-template)
+    - [ZeframLou forge template](https://github.com/ZeframLou/foundry-template)
+    - [AndreasBigger femplate](https://github.com/abigger87/femplate)
+  - Dive into repos using Foundry:
+    - [lil-web3](https://github.com/m1guelpf/lil-web3/)
+    - [n3rp](https://github.com/GrantStenger/n3rp)
+    - [zen](https://github.com/zkSoju/zen)
+    - [cloaks](https://github.com/abigger87/cloaks)
+    - [ethernaut-x-foundry](https://github.com/ciaranmcveigh5/ethernaut-x-foundry)
+    - [damn-vulnerable-defi-foundry](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry)
+    - [Multicall](https://github.com/mds1/multicall)
+  - [Brockelmore's testing verbosity with forge-std](https://github.com/brockelmore/forge-std)
 
 **HardHat**
 
@@ -492,6 +515,10 @@ In order to achieve the first and second goals, Yul provides high-level construc
 There's also an `unchecked` keyword in Solidity which disables the overflow and underflow checks from the compiler which were introduced in Solidity 0.8.0 and before were part of the SafeMath library in OpenZeppelin libraries. The `unchecked` keyword is oftentimes used 
 
 Writing Yul or inline assembly can obfuscate the functionality of your code by making it less readable for other contributors/auditors and it can potentially introduce new risks as the Solidity compiler oftentimes performs various optimizations and security checks.  
+
+#### EVM deep dive
+
+Understanding the ins and outs of the EVM is crucial for building high
 
 ### Backend development
 
@@ -572,7 +599,6 @@ The setup inside of the contract function that you want bots to run would look s
 
 When building applications you will want to display miscellaneous information from various different other applications or protocols, e.g. price feeds for different tokens on different AMMs, the price of NFTs listed on different marketplaces, various data from services your application relies on, etc. As a backend developer, your responsibilities are to know where you can find reliable sources of data for your application and build the infrastructure needed to fetch it so that frontend developers can display it on the site. It is also important to build redundancy of the data you query and store it in your own databases in order to prevent your application from failing in the case of API dependency failure.
 
-
 **Opensea**
 A good example of such an API is [OpenSea’s API](https://docs.opensea.io/reference/api-overview) which is public and can be queried in order to get the prices of NFT listings OpenSea, get floor prices, volumes, a bunch of other prices historical data, NFT metadata, and more.
 
@@ -580,7 +606,26 @@ As a developer, you can also create your own databases and API endpoints to fetc
 
 ### Full-stack blockchain development
 
-#### Building and deploying on L2s
+As the name implies, full-stack blockchain development is the closest specialization to being a jack of all trades. It involves building out all of the aspects of an application from front end, to smart contracts, to backend (at least to a certain degree). This is the most generic role that most blockchain developers will take and most companies and DAOs are looking for in a contributor. Since there is such a high demand for quality developers in the space, it is oftentimes the case that employers onboard people from different fields and turn them into a jack of all trades within web3 development so as to save costs and reduce HR resource requirements (which are incredibly scarce nowadays).
+
+Since rewriting the [front end](#front-end-development), [back end](#back-end-development) and [smart contract](#smart-contract-development) sections would be pointless, I'll dedicate this section just to list a bunch of full-stack guides, tips and tricks, deployment guidelines, project management, and other relevant information.
+
+#### Full-stack guides
+
+- [Introduction to Ethereum Development](https://www.youtube.com/watch?v=MlJPjJQZtC8) - [Austin Griffith](https://twitter.com/austingriffith)
+- [The Complete Guide to Full Stack Web3 Development](https://dev.to/dabit3/the-complete-guide-to-full-stack-web3-development-4g74) - [Nader Dabit](https://twitter.com/dabit3)
+- [Speed Run Ethereum](https://speedrunethereum.com/) - [Austin Griffith](https://twitter.com/austingriffith)
+- [Solidity, Blockchain, and Smart Contracts Course - Beginner to Expert Python Tutorial](https://www.youtube.com/watch?v=M576WGiDBdQ) - [Patrick Collins](https://twitter.com/PatrickAlphaC)
+- [Full-stack blockchain solidity course](https://github.com/smartcontractkit/full-blockchain-solidity-course-py) - [Patrick Collins](https://twitter.com/PatrickAlphaC)
+
+#### Full-stack tutorials
+
+- [Introduction to Ethereum](https://www.youtube.com/watch?v=MlJPjJQZtC8)
+- [Build Uniswap Blockchain Web3 App with Solidity | Next.js | Sanity.io](https://www.youtube.com/watch?v=xXxjRzdYIss)
+
+#### Building and deploying on L2s and DA layers
+
+Coming soon
 
 #### Optimism
 
@@ -600,9 +645,7 @@ Coming soon.
 
 #### Client development
 
-#### Networking
-
-#### ...
+#### Geth
 
 ### MEV searcher
 
@@ -614,7 +657,11 @@ WIP
 
 ### Cryptographer
 
+Coming soon.
+
 ### Protocol development
+
+Coming soon.
 
 ## Application-based development
 
@@ -630,17 +677,25 @@ WIP
 
 ### MEV
 
+Coming soon.
+
 #### The Dark Forest
 
 #### Frontrunning
 
-#### Creator economy
+#### Backrunning
 
-#### Backrunning 
+### Creator economy
+
+Coming soon.
 
 ### Gaming development
 
+Coming soon.
+
 ### Coordination / Public Goods
+
+Coming soon.
 
 ## Getting a job
 
@@ -684,11 +739,13 @@ If you manage to demonstrate mastery of any given skill within web3, then you ar
 
 ### Achieving mastery
 
-## Social aspect (RENAME)
-
-### Who to follow
+## Social capital
 
 ### How to build a reputation as a builder
+
+### Leverage your connections to grow
+
+### Give back to the community
 
 ## Conclusion
 
