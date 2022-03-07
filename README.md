@@ -688,8 +688,26 @@ Coming soon.
 
 ### DeFi
 
-WIP
+Decentralized finance (or DeFi for short) aims to bring concepts observed in current financial systems over to the blockchain. Protocols will involve the creation, management and investment of value, adapting these processes first seen in the traditional finance (or TradFi for short) sector to work appropriately for the decentralised nature of the blockchain.
 
+A key difference between decentralised finance and traditional finance is the concept of non-custody. In traditional finance, money is held by institutions such as banks and utilised by them to work for you to save, transact or even grow your money. This relies on forgoing access to the underlying funds, which a bank would offer you a digital representation of (i.e a number associated with your account balance within their database) alongside a means of withdrawal of your funds. Using such an institution removes much of the work and bureaucracy involved in the process of money management by you utilising this digital representation of value.  Banks and other financial institutions work as a custodian of your funds to do what they need with it, but they can limit what you can do with this digital representation and even prevent you from withdrawing the underlying funds. Decentralised finance turns this key issue on its head: protocols offer and innovate upon these traditional finance services themselves and give you a digital representation to your funds in the form of a "token" that you have full control of.
+
+Tokens don't have to represent just monetary funds; they can be created to represent anything of value, from shares of profits from a protocol to even another token. They also don't have to represent anything, but can accrue value themselves too, related to their instrinsic value of their underlying, usage, or perceived value by others. This forms a basis for trade, in which tokens can be traded for other tokens to put into protocols that accept them.
+
+Examples of tokens include:
+- [Ether](https://ethereum.org/en/eth/) - the native token of the [Ethereum blockchain](https://ethereum.org/en/) used to pay for transactions on the network.
+- [USD Coin](https://www.centre.io/usdc) - a "stablecoin" that is [always backed](https://www.circle.com/en/usdc) by 1 US dollar in reserve and redeemable for such.
+- [UNI](https://uniswap.org/blog/uni) - decisions regarding the [Uniswap](https://uniswap.org) protocol and its "community" reserve are made by the community, and the token represents a share of voting power in the protocol.
+- [Staked OHM / sOHM](https://docs.olympusdao.finance/main/basics/staking) - OHM is a token backed by a basket of assets in the Olympus protocol's treasury. The protocol gives you sOHM in exchange for your OHM when you stake your OHM in the protocol.
+
+Tokens take the form of smart contracts, following a standard such as the [ERC20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) standard, to define the functionalities of the token to be created, traded (by the user or on behalf) and destroyed. A standard enables blockchain protocols to interface with many different types of tokens in the same way, providing whatever financial services they wish to perform for the user.
+
+DeFi is composed of many various layers, and this is true of even DeFi protocol development that will build on top of other DeFi protocols and applications to aggregate efforts and exploit the benefits that come from [economies of scale](https://www.thebalance.com/economies-of-scale-3305926).
+
+![The DeFi Stack](images/DeFi-Knowlage-Stack.jpeg)<p align="center"><em>The DeFi stack and its layers, <a href="https://www.youtube.com/watch?v=a9aTvz4p-YE&list=PLS01nW3RtgorojSlcoLBPRfoNGzQFywaL">DeFi MOOC</a></em>
+</p>
+
+As such, many protocols aim to provide a specific financial service that is composable with other protocols and applications. This not only helps speed up development through reusage but also allows for new finance-related innovations to built on top of these primitives and grow the ecosystem as a whole.
 #### Lending/Borrowing
 
 #### DEXs
