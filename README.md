@@ -748,7 +748,6 @@ The two most used platforms to find crypto/web3 jobs are Twitter and a few selec
 - [bankless job pallet](https://bankless.pallet.com/jobs)
 - [web3 career](https://web3.career/)
 - [cryptocurrencyjobs](https://cryptocurrencyjobs.co/)
-- [crypto jobs](https://crypto.jobs/)
 - [web3 pallet](https://web-3.pallet.xyz/)
 - [useweb3 jobs](https://useweb3.xyz/jobs)
 - [web3 board](https://web3board.io/)
