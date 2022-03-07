@@ -535,6 +535,9 @@ For a comprehensive EVM deepdive, I suggest these resources:
 Special thanks to [@0x_doggie] and [@freddycoen] from whose threads I extrapolated these resources. - [Thread 1](https://twitter.com/freddycoen/status/1485572733706682368) 
 - [Thread 2](https://twitter.com/0x_doggie/status/1496507944803848194)
 
+You might wanna go through [Nick's Posts](https://ethereum.stackexchange.com/users/1254/nick-johnson) and [Jean's Solidity articles](https://jeancvllr.medium.com/solidity-tutorial-all-about-assembly-5acdfefde05c)
+
+
 ### Backend development
 
 As far as blockchain development goes, most of the logic that traditional applications would consider backend is encapsulated within smart contracts, however, there are also complementary technologies that allow you to query data from blockchains, index the data, create databases so that you have on-demand data from custom APIs, decentralized storage for content, user authentication / DID, etc. I wouldn't consider this its own specialization, but it is a sufficiently unique skill set for me to cover it separately. 
