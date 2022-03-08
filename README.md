@@ -1,5 +1,7 @@
 # DevPill.me - A Public Good Blockchain Development Guide
 
+![blockchain development guide NFT](./images/blockchain_development_guide.jpg)
+
 ## NFT edition
 
 I’m trying to gather resources to fund the development of this public good blockchain development guide and so I got my fren Ana Rueda (@ruedart) to create this amazing graphic for the [Mirror NFT edition](https://dcbuilder.mirror.xyz/PLNPOmKkYaP14kJa5A5pJgyIlg4dWHpjDiHS7BGC7J4). The funds will go to the continued development of this guide (90%) and to Ana for the creation of the art (10%). I’m open to discussion on how to structure the open collaboration around the guide and to allocating the funds into a community-owned multi-sig. The goal is to use the funds gathered on Mirror, Gitcoin grants round 13 and elsewhere to incentivize developers to create sections through bounty submissions. If this idea doesn’t gather appeal, then I will send the funds to the Gitcoin grants matching round so that other public goods get funded.
@@ -370,6 +372,18 @@ A key part of development is mitigating how many bugs are inside of your applica
 - [Jest](https://jestjs.io/)
 - [Mocha](https://mochajs.org/)
 
+**ENS integration**
+
+[ENS domains](https://ens.domains/) are human-readable domains for Ethereum addresses, the registrar for these domains is fully on-chain and the protocol is decentralizaed and governed by a DAO. ENS domains serve as an on-chain identity mechanism which many Ethereum users use to express themselves on-chain and to display information about themselves through ENS profile metadata containing contact information like email, Twitter, Discord or links to websites, a profile picture (NFT image metadata) and more. As a web3 front end developer you can tap into this registrar and display users' information once they've connected to your application with their web3 wallet.
+
+The best way to get started with ENS is [their official documentation](https://docs.ens.domains/), here you can get a general understanding of the ENS protocol. For integrating ENS into your dapp, visit [this section](https://docs.ens.domains/dapp-developer-guide/ens-enabling-your-dapp). You need to perform 3 steps in order to support ENS within your application:
+
+1. [Resolve ENS names](https://docs.ens.domains/dapp-developer-guide/resolving-names)
+2. [Support reverse resolution](https://docs.ens.domains/dapp-developer-guide/resolving-names#reverse-resolution)
+3. [Let users manage their ENS names](https://docs.ens.domains/dapp-developer-guide/managing-names)
+
+If you are interested in how the on-chain parts of ENS work, check out the [smart contract development section](#smart-contract-development)
+
 #### Further learning and development
 
 By now you have learned a solid technology stack that can enable you to build all kinds of user interfaces for web3 apps. In order to really engrain these technologies, you need to build pet projects or join a team full-time, even if you only know a few of them you can join a team and get upscaled there as your learning will be supercharged by more experienced coworkers that will act as mentors most of the times. The front-end development landscape is constantly evolving new technologies will come and go, it is in your best interest to look at trends in the industry and try adapting them once they are a clear sign of them becoming adopted. You will keep improving your technology stack over time especially as you become more senior and you are able to reason why you want to use one tool over the other and how it fits into the needs of the applications that you are building. 
@@ -479,6 +493,10 @@ Once you're comfortable with writing more and more complex contracts and maybe t
 There are common patterns employed in smart contract development, this [Solidty-patterns](https://github.com/fravoll/solidity-patterns) repo implements some of them.
 
 Since the EVM is such a constrained environment where each additional operation executed by the EVM adds gas costs to the execution of the smart contract, developers try to build as least resource-intensive contracts as possible whilst also maximizing readability and security. Since blockchains are a very adversarial environment were mistakes in a smart contract could lead to fund drains (RUGS) and exploits, it can be considered mission-critical software and so many developers get inspiration from other mission-critical software guidelines like the ones of NASA which are responsible for the lives of astronauts going to space. These development principles are guidelines that help optimize a codebase for maximum security through the adoption of a standardized procedure and developer mindset.
+
+**ENS integration**
+
+We mentioned how to integrate ENS domain names into your dapp within the [front end development section](#front-end-development), but as a smart contract developer you can also [resolve ENS domain names on-chain](https://docs.ens.domains/contract-developer-guide/resolving-names-on-chain), [write your own resolver](https://docs.ens.domains/contract-developer-guide/writing-a-resolver) which implements [EIP137](https://github.com/ethereum/EIPs/issues/137) or even [write your own registrar](https://docs.ens.domains/contract-developer-guide/writing-a-registrar).
 
 #### Specialized languages
 
@@ -682,6 +700,14 @@ Coming soon.
 Coming soon.
 
 ### Blockchain data analytics
+
+Useful links in the meantime:
+- [learn-python](https://github.com/trekhleb/learn-python)
+- [Dune analytics guide](https://twitter.com/DuneAnalytics/status/1483071440903680002)
+- [awesome-datascience](https://github.com/academic/awesome-datascience)
+- [awesome-python-data-science](https://github.com/krzjoa/awesome-python-data-science)
+- [Python for data science](https://www.youtube.com/watch?v=LHBE6Q9XlzI&feature=youtu.be&ab_channel=freeCodeCamp.org)
+
 
 Coming soon.
 
