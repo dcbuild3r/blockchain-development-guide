@@ -49,14 +49,13 @@ This guide will cover these main tracks, however anyone is free to submit a pull
 - [Frontend development](#front-end-development)
 - [Smart contract development](#smart-contract-development)
 - [Backend blockchain development](#backend-development)
+- [Core protocol development](#core-protocol-development)
 - [Full-stack blockchain development](#full-stack-blockchain-development)
 
 **Coming soon**
 
-- [Core development](#core-development)
 - [Security engineer](#security-engineer)
 - [MEV searcher](#mev-searcher)
-- [Protocol development](#protocol-development)
 - [Cryptographer](#cryptographer)
 - [Blockchain data analytics](#blockchain-data-analytics)
 
@@ -672,17 +671,172 @@ Coming soon
 
 #### Optimism
 
+- [Developer docs](https://community.optimism.io/docs/developers/)
+- [New Bedrock protocol specs](https://github.com/ethereum-optimism/optimistic-specs/)
+
 #### Arbitrum
+
+- [Developer docs](https://developer.offchainlabs.com/docs/developer_quickstart)
+- [Protocol description](https://developer.offchainlabs.com/docs/rollup_protocol)
 
 #### zkSync
 
+- [Developer docs](https://docs.zksync.io/dev/)
+- [New 2.0 docs](https://v2-docs.zksync.io/dev/)
+
 #### Starknet / StarkEx
 
-WIP
+- [StarkNet / Cairo docs](https://starknet.io/docs/)
 
-### Core development
+### Core protocol development
 
-Coming soon.
+#### General Learning
+
+There are many topics to learn about in core-development, one can specialize in any area. Here is a selection of learning-resources 
+Basic:
+- Merkle trees:
+  - [Ethereum execution-layer Merkle Patricia Tree walkthrough](https://dzone.com/articles/ethereum-yellow-paper-walkthrough-27)
+- [Execution and Consensus layer Merge design](https://www.youtube.com/watch?v=8N10a1EBhBc), video by Danny Ryan
+- [Rollup centric roadmap](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698), post by Vitalik
+- Ethereum protocol ELI5 (coming soon)
+
+Medium:
+- [Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf): L1 protocol specification in paper form
+- [ABI: Application Binary Interface](https://docs.soliditylang.org/en/v0.8.11/abi-spec.html) to interact with contracts
+- [EVM opcodes](https://www.evm.codes/): interactive reference
+- [RLP](https://eth.wiki/fundamentals/rlp): the encoding used everywhere in execution-layer
+- [SSZ specs](https://github.com/ethereum/consensus-specs/blob/dev/ssz/simple-serialize.md): encoding and merkleization of Eth2,
+  also see [visualized encoding](https://github.com/protolambda/eth2-docs/blob/master/eth2-ssz.svg) 
+  and [visualized hash-tree-root](https://github.com/protolambda/eth2-docs/blob/master/eth2-htr.svg).
+- [EVM](https://ethereum.org/en/developers/docs/evm/): overview of the machine that runs smart-contracts
+- Executable specs: readability-first python implementations of the protocol specification.
+  - [Consensus-layer](https://github.com/ethereum/consensus-specs), also see [pip package](https://pypi.org/project/eth2spec/)
+  - [Execution-layer](https://github.com/ethereum/execution-specs), also see the [rendered version](https://ethereum.github.io/execution-specs/).
+- [Simplified Eth2 Phase0 specs intro](https://notes.ethereum.org/@djrtwo/Bkn3zpwxB)
+- [Light client design](https://www.youtube.com/watch?v=ysW-Bq05pJQ) and [implementation](https://www.youtube.com/watch?v=bX8I9U2PYMk)
+
+Advanced:
+- Builder proposer separation:
+  - [Proposer/block builder separation-friendly fee market designs](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
+  - [Flashbots: frontrunning the MEV crisis](https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251)
+  - [state of research](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) and 
+- [Fork-choice Gasper paper: Combining GHOST and Casper](https://arxiv.org/abs/2003.03052)
+- [Dagger-Hashimoto (legacy PoW)](https://eth.wiki/concepts/dagger-hashimoto)
+- State DB design, Erigon docs:
+  - [Choice of storage engine](https://github.com/ledgerwatch/erigon/wiki/Choice-of-storage-engine)
+  - [State representation](https://github.com/ledgerwatch/erigon/blob/devel/docs/programmers_guide/guide.md)
+- BLS:
+  - [Signature aggregation in eth2](https://ethresear.ch/t/pragmatic-signature-aggregation-with-bls/2105) by Justin Drake
+  - [BLS12-381 For The Rest Of Us](https://hackmd.io/@benjaminion/bls12-381) by Ben Edgington
+  - [BLS Signature for Busy People](https://gist.github.com/paulmillr/18b802ad219b1aee34d773d08ec26ca2) by Paul Miller
+- KZG:
+  - [KZG polynomial commitments](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html) by Dankrad Feist
+  - [ZK Study Club part 1: polynomial commitments](https://www.youtube.com/watch?v=bz16BURH_u8) by ZK FM podcast with Justin Drake
+- ZK:
+  - [ZK study club playlist](https://www.youtube.com/watch?v=Pnc9J7uQgqs&list=PLj80z0cJm8QHm_9BdZ1BqcGbgE-BEn-3Y) by ZK FM podcast
+- Fraud proofs (optimistic rollup tech):
+  - [The State of Optimistic Rollup](https://medium.com/molochdao/the-state-of-optimistic-rollup-8ade537a2d0f) older overview by Daniel Goldman
+  - [Inside Arbitrum](https://developer.offchainlabs.com/docs/inside_arbitrum) arbitrum fraud proof
+  - [Cannon](https://medium.com/ethereum-optimism/cannon-cannon-cannon-introducing-cannon-4ce0d9245a03) optimism fraud proof
+- [LibP2P](https://docs.libp2p.io/): the network layer in Eth2, Polkadot, Filecoin and other blockchains.
+- [DevP2P](https://github.com/ethereum/devp2p/): the original network layer in Eth1 / execution-layer of ethereum.
+- [Whisk: A practical shuffle-based SSLE protocol for Ethereum](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763)
+- [VDF research](https://vdfresearch.org/): verifiable delay function for ethereum and other protocols
+- Data Availability Sampling (DAS):
+  - [DAS in practice](https://notes.ethereum.org/@vbuterin/r1v8VCULP)
+  - [DAS in full sharding design](https://hackmd.io/@vbuterin/sharding_proposal)
+
+#### L2
+
+Layer-2 scales Layer-1 by increasing capacity without significantly changing the security assumptions of the Layer-2.
+Although this does not change L1 itself, it does influence the general scaling design direction,
+generally pushing ethereum into a [rollup-centric roadmap](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698).
+
+Domains:
+- Side-chains: [EthHub](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/sidechains/), [eth org](https://ethereum.org/en/developers/docs/scaling/sidechains/)
+- State channels: [EthHub](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/state-channels/), [eth org](https://ethereum.org/en/developers/docs/scaling/state-channels/)
+- Plasma (mostly deprecated): [EthHub](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/plasma/), [eth org](https://ethereum.org/en/developers/docs/scaling/plasma/)
+- Rollups [intro by Polynya](https://polynya.medium.com/rollups-data-availability-layers-modular-blockchains-introductory-meta-post-5a1e7a60119d)
+  - ZK rollups (ZKRUs): [EthHub](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/zk-rollups/), [eth org](https://ethereum.org/en/developers/docs/scaling/zk-rollups)
+  - Optimistic rollups (ORUs): [EthHub](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/optimistic_rollups/), [eth org](https://ethereum.org/en/developers/docs/scaling/optimistic-rollups/)
+- Bridges: [eth org intro](https://ethereum.org/en/bridges/)
+- L3 / validiums / volitations etc:
+  - [starkware L3](https://medium.com/starkware/fractal-scaling-from-l2-to-l3-7fe238ecfb4f)
+  - [Validium eth org intro](https://ethereum.org/en/developers/docs/scaling/validium/)
+
+Refer to [L2beat.com](https://l2beat.com/) for an overview of active L2 scaling solutions.
+
+
+#### L1
+
+Domains:
+- Eth1 / execution layer
+  - Networking: devp2p
+  - EVM
+  - Tx pool
+  - Sync methods (Fast, Snap, Archive, Beam, Light)
+  - State DB
+  - User-facing (JSON RPC, tx tracing, etc.)
+- Eth2 / consensus layer
+  - Networking: libp2p
+  - Fork-choice
+  - Attestations / BLS aggregation
+  - Staking / Validator clients
+  - Slashings
+  - Sharding
+
+##### News
+
+Selection of protocol news resources:
+- [Week in Ethereum](https://weekinethereumnews.com/): OG weekly news letter
+- [Eth2.News](https://eth2.news): eth2 news by Ben Edgington
+
+#### Communication
+
+- [Discord Eth R&D server](https://discord.gg/EyK6HmMcmy)
+- [Eth magicians](https://ethereum-magicians.org/), forum for governance / protocol discussion
+- [Eth research](https://ethresear.ch/), forum for research discussion
+- AllCoreDevs (ACD): [discord channel in R&D](https://discord.gg/S6r6RcWPC3)
+- Ethereum Foundation [youtube channel](https://www.youtube.com/c/EthereumFoundation) (streams ACD and Consensus calls)
+
+#### L1 Specifications
+
+##### Execution layer
+
+- [Ethereum Improvement Proposals: EIPs](https://eips.ethereum.org/)
+- [Execution APIs](https://github.com/ethereum/execution-apis/)
+- [New Execution py-specs](https://github.com/ethereum/execution-specs)
+
+
+##### Consensus layer
+
+- [Consensus specs](https://github.com/ethereum/consensus-specs)
+- [Beacon APIs](https://github.com/ethereum/beacon-APIs), also see [interactive site](https://ethereum.github.io/beacon-APIs/)
+- [Annotated specs](https://github.com/ethereum/annotated-spec) by Vitalik Buterin
+- [Eth2 book](https://eth2book.info/altair/contents): extended annotated specs with some eth2 history, by Ben Edgington
+- Legacy (but good) resources:
+  - [Proof Of Stake F.A.Q.](https://eth.wiki/en/concepts/proof-of-stake-faqs)
+  - [Sharding F.A.Q.](https://eth.wiki/sharding/Sharding-FAQs)
+  - [Ethereum sharding research compendium](https://notes.ethereum.org/@serenity/H1PGqDhpm?type=view)
+
+
+#### Ethereum core teams
+
+Client teams (those that are open-source), in no particular order:
+
+| Domain      | Project                                                                                                      | Language      | Discord                                                                    | Docs                                                               |
+|-------------|--------------------------------------------------------------------------------------------------------------|---------------|----------------------------------------------------------------------------|--------------------------------------------------------------------|
+| Eth2        | [Prysm](https://github.com/prysmaticlabs/prysm)                                                              | Go            | [invite](https://discord.gg/fbHjSdy)                                       | [docs](https://docs.prylabs.network/docs/getting-started/)         |
+| Eth2        | [Lighthouse](https://github.com/sigp/lighthouse)                                                             | Rust          | [invite](https://discord.gg/uC7TuaH)                                       | [docs](https://lighthouse-book.sigmaprime.io/)                     |
+| Eth2        | [Lodestar](https://github.com/ChainSafe/lodestar)                                                            | Typescript    | [invite](https://discord.gg/Quv3nJX)                                       | [docs](https://chainsafe.github.io/lodestar/)                      |
+| Eth1 + Eth2 | Nimbus [eth2](https://github.com/status-im/nimbus-eth2) and [eth1](https://github.com/status-im/nimbus-eth1) | Nim           | [invite](https://discord.gg/YbTCNat)                                       | [docs](https://nimbus.guide/)                                      |
+| Eth2        | [Teku](https://github.com/consensys/teku) (Artemis + Harmony)                                                | Java / Kotlin | [invite](https://discord.gg/vZPbTfw)                                       | [docs](https://docs.teku.consensys.net/en/latest/)                 |
+| Eth1        | [Go-ethereum](https://github.com/ethereum/go-ethereum)                                                       | Go            | [invite](https://discord.gg/nvKEx7QBJc)                                    | [docs](https://geth.ethereum.org/docs/)                            |
+| Eth1        | [Nethermind](https://github.com/NethermindEth/nethermind)                                                    | C#            | [invite](https://discord.gg/esp8n6W)                                       | [docs](https://docs.nethermind.io/nethermind/)                     |
+| Eth1        | [Besu](https://github.com/hyperledger/besu)                                                                  | Java          | [invite](https://discord.gg/mEm2QcVxFN)                                    | [docs](https://wiki.hyperledger.org/display/BESU/Hyperledger+Besu) |
+| Eth1        | [ethereum-JS](https://github.com/ethereumjs/ethereumjs-monorepo)                                             | Javascript    | [invite](https://discord.gg/qJJkE3RKUz)                                    | [docs](https://ethereumjs.readthedocs.io/en/latest/)               |
+| Eth1        | [Erigon](https://github.com/ledgerwatch/erigon)                                                              | Go            | [Invite-only](https://github.com/ledgerwatch/erigon#erigon-discord-server) | [docs](https://github.com/ledgerwatch/erigon/tree/devel/docs)      |
+
 
 #### Computer science
 
