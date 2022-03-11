@@ -276,6 +276,7 @@ I believe that React is best learned from the official documentation, but there 
 - [awesome-react](https://github.com/enaqx/awesome-react) - This GitHub repository aggregates many useful resources for React developers, it has tutorials, tooling, component libraries, frameworks, design patterns, guidelines, and much more. It is a good place to look for inspiration and resources when using React.
 - If you want a paid video course I can recommend either [ZTM's React course](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/) or [Maximilian Schwarzmuller's React course](https://www.udemy.com/share/101Wby3@JDt64oz7fMQjMAWBtrmk5wuDfzeEWDYkQeRN1yCa5yjMEWG0cKPDILlqSqtSXEI7/). On Udemy there are sales periods every once in a while which allow you to buy courses for `$15` instead of `$200`, so wait for one of those, never buy for the full price.
 - [freeCodeCamp React course on YT](https://youtu.be/bMknfKXIFA8)
+- [Learn React for free](https://scrimba.com/learn/learnreact)
 
 After you feel like you've understood how React works, you have learned about lifecycle methods, hooks, how to pass down data through props, how to use the Context API, etc. I recommend trying to build the front end of a web3 app like Uniswap or an NFT marketplace like OpenSea. To rapidly prototype the design I recommend using [tailwind.css](https://tailwindcss.com) and Chrome browser developer tooling to inspect the styles of the site you're trying to recreate. Also, don't forget to use CSS flexbox/grid where necessary. Try to simulate the data inside of these apps using hardcoded JSON objects.
 
@@ -310,6 +311,12 @@ Ethers.js is currently the most popular Ethereum library among developers, but t
 **Learning resources**
 - [ethers.js documentation](https://docs.ethers.io/)
 
+
+[Web3.js](https://web3js.readthedocs.io/) is a collection of libraries that allow you to interact with a local or remote ethereum node using HTTP, IPC or WebSocket. The web3 JavaScript library interacts with the Ethereum blockchain. It can retrieve user accounts, send transactions, interact with smart contracts, and more.
+
+**Learning resources**
+- [web3.js documentation](https://web3js.readthedocs.io/en/v1.7.1/getting-started.html)
+
 #### Design
 
 As a front-end developer, you need to focus on how your application looks and how it feels to use it. A big part of that is designed, before building a website you should prototype how you want it to look, design how your users will interact with your application, how will that fit with the use case of your application, and what you want to accomplish with it, how to make it so that your users like using it and more. UI/UX is a specialization of its own, but every single front-end developer should have strong foundations in UI/UX regardless. Most big teams will have designers which will prototype applications using tools like Figma, Framer Motion, and various other tools. As a front-end developer, your task is to turn those designs into functioning code and hook all of the components to the APIs and databases necessary as well as creating the functionality of the application. 
@@ -318,6 +325,7 @@ One of the most popular tools to prototype and design websites is Figma, so ever
 
 **Learning resources**
 - [freeCodeCamp Figma YT course](https://youtu.be/jwCmIBJ8Jtc)
+- 
 
 #### Web3 templates
 
@@ -414,6 +422,8 @@ Solidity is by far the most popular language to write smart contracts at the mom
 After we finish the course with the basics, we'll move on to building small projects implementing various different protocols, applications, and cryptographic primitives through the use of the [scaffold-eth](https://github.com/scaffold-eth/scaffold-eth) challenge that appear in [this thread](https://twitter.com/austingriffith/status/1483834810359377923?s=20&t=lkXzcAH2cT5xf7btyMAs0A). Scaffold-eth is a web3 development template built by [Austin Griffith](https://twitter.com/austingriffith) and open-source contributors which abstracts the backend of your app and creates a front-end interface for interacting with the smart contracts that you write. We will start with the [Ethereum Speed Run](https://speedrunethereum.com/
 ) challenges in the thread mentioned above, and continue with building more complex applications like a [signature-based multisig](https://github.com/scaffold-eth/scaffold-eth-examples/tree/meta-multi-sig), an [app that uploads images to IPFS](https://github.com/scaffold-eth/scaffold-eth/tree/image-upload-ipfs), and more.
 
+Also a great way to learn solidty is to look through already written codes. For eg. https://solidity-by-example.org/
+
 Now that you've been writing more and more complex smart contracts it is a good idea to start looking at other people's code to get a feel for how they implement different features, how they structure code, what designs and patterns they use, how they optimize for gas, and a lot more.
 
 There are many techniques that you'll be picking up along on your journey in order to make your contracts more resource-effective and gas-optimized so that your users don't need to spend as much money for using your applications.
@@ -436,6 +446,8 @@ Examples of great codebases:
 - [Zora v3](https://github.com/ourzora/v3)
 - [Rari Capital](https://github.com/Rari-Capital/vaults)
 - [Ribbon Finance](https://github.com/ribbon-finance/ribbon-v2/tree/master/contracts)
+- [AAVE](https://github.com/aave/aave-protocol)
+- [SushiSwap](https://github.com/sushiswap/sushiswap)
 
 #### Testing
 
@@ -602,6 +614,11 @@ One of the most common ways to query data from the blockchain is by calling RPC 
 [Moralis](https://moralis.io/) is a web3 development platform that automates your backend, instead of having to query data from nodes, indexing the data, and creating databases so that you don't need to query the blockchain on every user request, Moralis does it for you. You instantiate a Moralis server that exposes an API to all blockchain data through a REST API to a PostgreSQL database. It also has smart contract alerts, cloud functions, cross-chain user authentication, and more. The only downside of using Moralis is that it's a centralized service provider. It is the easiest way to get a backend for your Dapp going as Moralis has a very simple to use SDK that helps you tap into the APIs offered by their services. It is a great way to get started building backends as most of the heavy lifting is done for you.
 
 To learn how to use Moralis checkout [their documentation](https://docs.moralis.io/introduction/readme) and [their YouTube channel](https://www.youtube.com/channel/UCgWS9Q3P5AxCWyQLT2kQhBw).
+
+**Thirdweb** 
+
+[Thirdweb](https://thirdweb.com/) provide smart contracts, SDKs and UI components that creators, game studios and developers can integrate into their app
+To learn how to use Thirdweb checkout [their documentation](https://portal.thirdweb.com/)
 
 #### Oracles
 
