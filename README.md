@@ -879,15 +879,28 @@ Coming soon.
 
 ### Blockchain data analytics
 
-Useful links in the meantime:
-- [learn-python](https://github.com/trekhleb/learn-python)
-- [Dune analytics guide](https://twitter.com/DuneAnalytics/status/1483071440903680002)
-- [awesome-datascience](https://github.com/academic/awesome-datascience)
-- [awesome-python-data-science](https://github.com/krzjoa/awesome-python-data-science)
-- [Python for data science](https://www.youtube.com/watch?v=LHBE6Q9XlzI&feature=youtu.be&ab_channel=freeCodeCamp.org)
+This section will primarily cover EVM based chains as of now. Getting started with data analytics in web3 is really easy, because everything is standardized, there are tons of visualization/explorer tools, and most of the existing analysis in the space is fully open-source. No matter your background and experience level, I recommend starting your analytics journey with SQL - it's the easiest to work with and share by far. Python is great once you're more experienced, but it's much harder to work with piecemeal and you'll likely progress slowly or end up giving up :P
 
+###### Resources for getting started:
+- [Guide](https://ath.mirror.xyz/w2cxg5OP1OEcqvSgsEjSSyKRJhPmam0w-fXGogiG-8g) to how to think about web3 data, the tools you'll need across the data stack, and some skills/roles that are common in the space.
+- For basics of both SQL and Ethereum, start [here](https://towardsdatascience.com/your-guide-to-basic-sql-while-learning-ethereum-at-the-same-time-9eac17a05929)
+- Once you're comfortable with those, start with the intermediate material [here](https://towardsdatascience.com/your-guide-to-intermediate-sql-while-learning-ethereum-at-the-same-time-7b25119ef1e2)
+- If you're comfortable with contract tables and want to dive more into the base data tables (transactions, logs, traces) then [check out this](https://ath.mirror.xyz/mbR1n_CvflL1KIKCTG42bnM4HpfGBqDPNndH8mu2eJw) complete break down of an Ethereum transaction (including proxy patterns).
+- A lot of event and call data analytics relies on using aggregations to get to the most current state. Skip that noise and go to [storage and state data analysis](https://ath.mirror.xyz/lcZzeBcfpmfQlIHqUBmNAmv5EeVfNBGmr-S7mkWcuyo) when you're ready (this will require you to learn some solidity)
+- To fully dive in and become a web3 analyst, check out the [OurNetwork Learn 30 day data course](https://ournetwork.mirror.xyz/gP16wLY-9BA1E_ZuOSv1EUAgYGfK9mELNza8cfgMWPQ) with videos that cover a multitude of topics.
+- Once you're ready to start applying to roles, one place to start is [applying to this talent board](https://ilemi.pallet.com/talent) for a chance to have 1:1 help finding a role.
 
-Coming soon.
+###### Beginner friendly orgs to start getting involved in:
+- [MetricsDAO](https://discord.com/invite/metrics) (runs workshops and bounties weekly)
+- [Index Coop](https://discord.com/invite/BcqYxdNC3R) (lots of broad protocol analytics generally to learn from)
+- [Dune Wizards](https://discord.com/invite/ErrzwBz) (lots of helpers, and some harder bounties)
+- [Flipside Gunslingers](https://discord.com/invite/ZmU3jQuu6W) (lots of helpers, and a more focus on cross-chain work like Harmony, Terra, Solana, etc)
+
+###### Some data feeds to follow to keep updated on newest analysis in the space:
+- [Dune Digest & Podcast](https://twitter.com/DuneAnalytics/status/1502358536432537607)
+- [OurNetwork Weekly Data Newsletter](https://ournetwork.substack.com/)
+
+<more to come soon!>
 
 ## Application-based development
 
