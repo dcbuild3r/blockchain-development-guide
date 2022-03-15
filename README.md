@@ -881,9 +881,9 @@ Coming soon.
 
 Coming soon.
 
-### Blockchain data analytics
+### Blockchain data analytics (provisional)
 
-This section will primarily cover EVM based chains as of now. Getting started with data analytics in web3 is really easy, because everything is standardized, there are tons of visualization/explorer tools, and most of the existing analysis in the space is fully open-source. No matter your background and experience level, I recommend starting your analytics journey with SQL - it's the easiest to work with and share by far. Python is great once you're more experienced, but it's much harder to work with piecemeal and you'll likely progress slowly or end up giving up :P
+This section will primarily cover EVM based chains as of now. Getting started with data analytics in web3 is really easy, because everything is standardized, there are tons of visualization/explorer tools, and most of the existing analysis in the space is fully open-source. No matter your background and experience level, I recommend starting your analytics journey with SQL - it's the easiest to work with and share by far.
 
 ###### Resources for getting started:
 - [Guide](https://ath.mirror.xyz/w2cxg5OP1OEcqvSgsEjSSyKRJhPmam0w-fXGogiG-8g) to how to think about web3 data, the tools you'll need across the data stack, and some skills/roles that are common in the space.
