@@ -873,9 +873,48 @@ Coming soon.
 
 WIP
 
-### Cryptographer
+### Cryptography
 
-Coming soon.
+Cryptography is the backbone of distributed ledgers. No distributed permissionless system is possible without asymmetric cryptography. If you are interested in building decentralized applications, it's essential to understand the wallet generation and transaction signing processes. Both of which rely heavily on underlying cryptographic protocols. Throughout this section, I provide a wide array of information about cryptography.
+
+**DISCLAIMER:** While playing with these algorithms on your own is a great way to learn, you **NEVER** want to use your cryptographic protocols in a production environment. The existing libraries have been well-vetted and battle-tested over many years. Because cryptography is complex by design, attempting to build your cryptographic protocols is incredibly dangerous. 
+
+#### What is cryptography
+
+Cryptography is the study of enciphering and deciphering information preserving the privacy of enciphered information. 
+
+Modern cryptography is mathematically robust and plays a critical role in securing sensitive information like your bank account numbers and social security number. While the mathematics may seem complex and intimidating, the concepts are graspable even without completely understanding the encryption algorithms.
+
+Cryptography is made up of a collection of primitives which serve as building blocks for different cryptographic protocols. Some examples of cryptogrpahic primitives include hash functions such as sha-256 and md5(a one way map), and verifiable random functions (VRFs). True randomness is extreamly dificult to capture, but mathmaticians have developed a way to construct randomness that is indestinguishable from *true randomness*. 
+
+These primitives are used to build more robust tools like ciphers. Ciphers are algorithms used to conceal (encrypt) and decrypt information. The encrypted data is called ciphertext, while the translated information is called plaintext. There are two general categories of ciphers, symmetric ciphers and asymmetric ciphers. We will go into the difference and some examples throughout this section.
+
+#### Symmetric Ciphers
+
+A cipher is symmetric when the same Key used to encrypt information is also used to decrypt information resulting in Key symmetry. A simple example of this is a XOR cipher. To encrypt with an XOR cipher you simply XOR the bits of the key with the bits of the plaintext. To decrypte the cipher text you XOR the same key with the plaintext. I have provided an XOR truth table bellow for convienence. 
+
+|  A | B | A XOR B |
+| -- | - | ------ |
+| 0  | 1 | 1 |
+| 0  | 0 | 0 |
+| 1  | 1 | 0 |
+| 1  | 0 | 1 |
+
+**NOTE** this cipher is if the same key is used more then once. See this [article](https://idafchev.github.io/crypto/2017/04/13/crypto_part1.html) for the details
+
+Other examples of symetric ciphers include the transposition ciphers like [Caesar's Cipher](https://en.wikipedia.org/wiki/Caesar_cipher), and permutation ciphers. Both of which are easily broken by [frequence analysis](https://en.wikipedia.org/wiki/Frequency_analysis). In fact most monoalphabetic Symmetric ciphers (using one alphabet) are broken with frequency analysis. 
+
+There are existing Symmetric ciphers that have not been broken. A good example is the Advance Encryption Standard or [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard). However the security of AES relies on having a sufficiently large key size.
+
+Symmetric ciphers are appropriate until you need to send a key over a communication protocol securely. To share private information over a secure communication channel, you and the receiving party must share a key. You can see this chicken or the egg problem forming. How do you securely share the Key?
+
+#### Asymmetric Ciphers
+
+The ciphers used today that distributed ledgers rely on are asymmetric ciphers. Asymmetric ciphers address the key exchange problem presented above by using a different key to encrypt information than they do to decrypt information. These keys are known as the public and private key pair. This is only possible because of a mathematical relationship between the public and private key pair. The first breakthrough with asymmetric cryptography was the Rivest Shamir Alderman (RSA) cipher named after its creators. 
+
+##### Wallet generation in Ethereum.
+
+To generate a wallet address in Ethereum,  you first randomly generate a 256 bit private Key with a verifiably random function (VRF). Then you use elliptic curve cryptography to generate the corresponding 256-bit public Key. Finally, you hash the 256 bit public Key with keccak256 to a 160-bit address. 
 
 ### Protocol development
 
