@@ -873,9 +873,60 @@ Coming soon.
 
 WIP
 
-### Cryptographer
+### Cryptography
 
-Coming soon.
+Cryptography is the backbone of distributed ledgers. No distributed permissionless system is possible without asymmetric cryptography. If you are interested in building decentralized applications, it's essential to understand the wallet generation and transaction signing processes. Both of which rely heavily on underlying cryptographic protocols. Throughout this section, I provide a wide array of information about cryptography.
+
+**DISCLAIMER:** While playing with these algorithms on your own is a great way to learn, you **NEVER** want to use your cryptographic protocols in a production environment. The existing libraries have been well-vetted and battle-tested over many years. Because cryptography is complex by design, attempting to build your cryptographic protocols is incredibly dangerous. 
+
+#### What is cryptography
+
+Cryptography is the study of enciphering and deciphering information preserving the privacy of enciphered information. 
+
+Modern cryptography is mathematically robust and plays a critical role in securing sensitive information like your bank account numbers and social security number. While the mathematics may seem complex and intimidating, the concepts are graspable even without completely understanding the encryption algorithms.
+
+Cryptography is made up of a collection of primitives which serve as building blocks for different cryptographic protocols. Some examples of cryptogrpahic primitives include hash functions such as sha-256 and md5(a one way map), and verifiable random functions (VRFs). True randomness is extreamly dificult to capture, but mathmaticians have developed a way to construct randomness that is indestinguishable from *true randomness*. 
+
+These primitives are used to build more robust tools like ciphers. Ciphers are algorithms used to conceal (encrypt) and decrypt information. The encrypted data is called ciphertext, while the translated information is called plaintext. There are two general categories of ciphers, symmetric ciphers and asymmetric ciphers. We will go into the difference and some examples throughout this section.
+
+#### Symmetric Ciphers
+
+A cipher is symmetric when the same Key used to encrypt information is also used to decrypt information resulting in Key symmetry. A simple example of this is a XOR cipher. To encrypt with an XOR cipher you simply XOR the bits of the key with the bits of the plaintext. To decrypte the cipher text you XOR the same key with the plaintext. I have provided an XOR truth table bellow for convienence. 
+
+|  A | B | A XOR B |
+| -- | - | ------ |
+| 0  | 1 | 1 |
+| 0  | 0 | 0 |
+| 1  | 1 | 0 |
+| 1  | 0 | 1 |
+
+**NOTE** this cipher is if the same key is used more then once. See this [article](https://idafchev.github.io/crypto/2017/04/13/crypto_part1.html) for the details
+
+Other examples of symmetric ciphers include the transposition ciphers like [Caesar's Cipher](https://en.wikipedia.org/wiki/Caesar_cipher), and permutation ciphers. Both are easily broken by [frequency analysis](https://en.wikipedia.org/wiki/Frequency_analysis). Most monoalphabetic Symmetric ciphers (one alphabet) are broken with frequency analysis. 
+
+There are existing Symmetric ciphers that have not been broken. A good example is the Advanced Encryption Standard or [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard). However, the security of AES relies on having a sufficiently large key size.
+
+Symmetric ciphers are appropriate until you need to send a key over a communication protocol securely. You and the receiving party must share a key to share private information over a secure communication channel. You can see this chicken or the egg problem forming. How do you securely share the Key?
+
+#### Asymmetric Ciphers
+
+The ciphers used today that distributed ledgers rely on are asymmetric ciphers. Asymmetric ciphers address the key exchange problem presented above by using a different key to encrypt information than they do to decrypt information. These keys are known as the public and private key pair. The asymmetric cryptosystem is only possible because of a mathematical relationship between the public and private key pair. The first breakthrough with asymmetric cryptography was the Rivest Shamir Alderman [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) cipher named after its creators. The security of RSA relies on the fact that factoring large prime numbers is hard, more precisely [the Discrete Log Problem](https://en.wikipedia.org/wiki/Discrete_logarithm). These ciphers allow anyone to encrypt information intended for you with your public key, but only you can decrypt it with your private key. 
+
+While RSA was a breakthrough in cryptography, it was computationally not as fast as some of the leading symmetric ciphers at the time. Thus, RSA was used to securely share the symmetric key cipher, after which the symmetric cipher was used. RSA was the state of the art until a curve initially discovered about 2000 years ago by [Dophantus](https://en.wikipedia.org/wiki/Diophantus) was explored for a better approach. 
+
+There is an algebraic structure called a [finite field](https://en.wikipedia.org/wiki/Finite_field). In a finite field, the elements in the field obey slightly more abstract rules when compared to arithmetic operators on real numbers. You can define a finite field of rational points on a curve given that you can define multiplication and addition between these points, and the results under these definitions remain rational points on the curve. The class of curves that these fields have been defined over for asymmetric cryptography are called elliptic curves and fallow the general equation of y<sup>2</sup> = x<sup>3</sup> + ax + b where a and b are constants. 
+
+How does this relate to the discrete log problem? It turns out that the discrete log problem in the finite field of an elliptic curve is preserved and still very difficult. Thus we can construct similar primitives like those constructed in RSA over fields of elliptic curves. The advantage over RSA is that they are relatively fast, so more than 90% of all internet traffic year to date is encrypted with elliptic curves.
+
+Detail on the parameters for curve p256 can be read about [here](https://csrc.nist.gov/csrc/media/events/workshop-on-elliptic-curve-cryptography-standards/documents/papers/session6-adalier-mehmet.pdf). If you are curious about how the addition and multiplication operators are defined in the finite fields over these curves, I recommend this [reading](https://hackernoon.com/what-is-the-math-behind-elliptic-curve-cryptography-f61b25253da3). 
+
+##### Digital Signatures
+
+We can create a new cryptographic primitive called a digital signature with asymmetric cryptography. For example, you want to prove that you have the corresponding private key to a public key (to authorize a transaction). A simple way to think about this is what if you encrypt information with your private key and allow anyone to use your public key to decrypt this information. The Elliptic Curve Digital Signature algorithm [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) is slightly more complex and requires you to have a vital source of randomness as one of the parameters. Nonetheless, this is how you authorize (send) a transaction from your wallet. You sign the transaction with your private key (revealing no information about the private key) to prove you have the authority to authorize your transaction. You can now see how anyone with your private key can authorize transactions on your behalf. *Not your keys, not your crypto* 
+
+##### Wallet generation in Ethereum.
+
+To generate a wallet address in Ethereum, you first randomly generate a 256 bit private Key with a verifiably random function (VRF). Then you use elliptic curve cryptography to generate the corresponding 256-bit public Key. Finally, you hash the 256 bit public Key with [keccak256](https://keccak.team/keccak.html) to a 160-bit address. With a 256-bit key, the odds of someone generating a private key already in use (a collision) is 2<sup>-256</sup> and computationally unfeasible. 
 
 ### Protocol development
 
