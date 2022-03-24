@@ -359,6 +359,7 @@ There are many CSS libraries and frameworks which modify the way in which you wr
 - [Framer Motion](https://www.framer.com/motion/) (Animations framework)
 - [Chakra UI](https://chakra-ui.com/) (component library)
 - [Material UI](https://mui.com/) (component library)
+- [Next UI](https://nextui.org) (component library)
 - [Sass](https://sass-lang.com/) (CSS pre-processor)
 - [PostCSS](https://postcss.org/) (CSS pre-,post-processor)
 - [awesome-CSS](https://github.com/awesome-css-group/awesome-css) (CSS learning repo)
