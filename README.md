@@ -1047,7 +1047,75 @@ Coming soon.
 
 ## Social capital
 
-Coming soon.
+### Introduction
+
+Social capital expresses how much influence you have within social circles, good metrics to denominate social capital in are:
+
+- relevant followers across social platforms within the industry
+- reputation formed by building, creating, contributing to the space
+- friends in the space that will help you grow, that you can learn from, that you can rely on, that you can discuss your ideas with and get constructive criticism from.
+- connections with people that can introduce you or vouch for you in different situations
+- etc
+
+There's various methods to accrue social capital which will be talked about within this guide and will be expanded upon over time. Most consist in outputting relevant content, networking and interacting with people in the space, building products, contributing to the ecosystem in different ways, providing value (or fun), and many other methods.
+
+In order to meet 'good' people in the space you also need to spend your time in the right places and doing the right things, this guide will help you streamline your focus and save time by not wasting it in places where people are not listening or places which are used to achieve different goals from accruing social capital.
+
+Another important aspect of accruing social capital is putting out content which other people find interesting, engaging, relevant or valuable. As a developer in the space, your content should provide valuable to other people within the space: to developers, and other people wanting to get a more technical overview of the field/products/projects you're working on. There's also lots of potential to accrue social capital by creating educational resources like trivia, fun facts, guides, tutorials, reviews, talks, discussions, debates, etc. A good example of this is devpill.me itself, where me (dcbuild3r) contributing content to this public good guide helps others know about me and that I'm creating a resource that is benefiting anyone, people who are interested in learning about blockchain development follow me. 
+
+### How to leverage social platforms to grow as a developer
+
+The most relevant platforms to interact with people in the space are:
+
+#### Twitter
+
+Twitter is used to write short form content that either redirects to long form content like Medium, Mirror, Substack, ... articles or it is content short enough to fit in a few tweets unless you write a 206-tweet long tweet (in which case @thereaderapp is useful to make long tweets readable).
+
+#### Telegram
+
+Telegram is a single threaded chatting platform which is generally used for simple group chats and newsletters in crypto, as a developer there are a few groups which you can follow within your specific realm of interest or create group chats with friends in order to discuss various topics, create a learning group for a programming language, protocol, or topic, and more. Telegram is good for simple one-thread conversations where you don’t need to manage asynchronous communication.
+
+#### Discord
+
+Discord groups are useful once you have a big community, DAO, or friend group which you want to participate in. For developers there are various good groups like Buildspace, Developer DAO, and others. It is also used by different teams to manage contributions to an application, protocol or service. So for example if you become a contributor to an open-source project like Aave and you want to recommend a change to one of its open codebases and the change gets accepted, the coordination, and all the processes usually go through Discord. Many projects also help new contributors get started with building with a project and if you are learning something new it is a good place to ask technical questions.
+
+#### Real life events
+
+Although not available to everyone there are events hosted all around the world where people from different communities within web3 and crypto gather together in order to organize conferences, hackathons, parties, meetups, talks and more. Real life events are one of the best places to find like-minded people to become friends with, to get hired, to network with other interesting people in the space, to learn, to build new projects at hackathons and push your own boundaries, etc. It is underrated just how much you can grow as a developer if you surround yourself with people that have the same properties that you want to acquire for yourself. The people around you can push you to grow and take you to new heights as they expose you to new challenges and help you along the way.
+
+### Who to interact with
+
+When you are on the social platforms mentioned above you should target the people that help you grow, and make connections with them. 
+- experts in your preferred field of interest
+
+If you talk to people with expertise in the fields that you want to become skilled in, then you’ll have a much easier time learning them, you’ll get good connections that will propel you forward in your career and you will also most likely have more opportunities and resources to grow as a developer by getting hired, getting tips on how to learn a top
+
+- people trying to learn the same things you are learning
+
+It is good to share ideas and have two way feedback on any topic you are learning from other people learning the same material you are, especially if they are more experienced than you are. Another good reason to learn in groups (ideally pairs) is that teaching is the best way to solidify your own knowledge as when you have to explain a complex topic simply, you need to have a good understanding of any given topic so that you are capable of explaining it. More on this in the [Mastery](https://www.devpill.me/docs/mastery/) section.
+
+- people building other primitives in the web3/crypto space (expand horizons) 
+
+As someone trying to learn more about blockchain development, especially when you are starting out, it is great to explore at the beginnning and try many different things before you start specializing in any given field of development. That's why you should follow the most proficient people in different fields in order to get a bird's eye view of the space. Also I recommend reading over other sections within devpill.me so that you can see what is out there to learn.
+
+### What content to put out
+
+In order to amass social capital, putting out good content out into different popular social platforms is crucial as people like to follow individuals and groups that they can get value from. E.g.: if you start talking about building in DeFi, then individuals interested in DeFi will start to follow you, like and retweet your posts, engage to conversations in comments, etc. As a blockchain developer in any specialization there's different ways in which you can provide interesting content and distribute it across different social platforms.
+
+- document > create at the beginning
+When you start out as a blockchain developer you usually won't have any novel findings, cool things that you are building or projects you are working on, so it is good to share your own learning proccess and your journey becoming a blockchain developer.
+  - talk about your learnings in your journey:  
+ It is good to talk about different resources you are using to learn the topics you are interested in, share it with others and tell them how it has helped you learn about a specific topic, also provide commentary and helpful tips which might be missed by people only skimming through the resources and haven't gone into depth.
+  - talk about the tools you use:
+  Developers love to talk about their tooling, what libraries they use, what IDE and extensions they use to write code, what services, and applications they use on a daily basis to organize themselves and be productive, and much more.
+  - ask questions about the things you are learning:
+ chances are that many people following you have had the same questions as you in the past and they can provide you with a lot of helpful insight about any given topic
+  - be active in threads in that are relevant to your interests:
+if there relevant events happening within the space that you are interested in, it is a good idea to engage in public discourse with other people around those events in order to get a better overview of what's happening and to try to extract valuable information / learnings out of it
+- retweet things that happen within your field of interest with commentary / opinions
+- summarize articles, talks, events, updates, discuss code within the projects / fields that interest you.
+- shitpost (express your own personality / be yourself) for engagement (grows your network whilst having fun):
+Be creative, development doesn't need to be everything you talk about, many also use social platforms to make friends and have fun, so you can also do funny content, light-hearted threads on any given topic, post pictures of your dog, or whatever you want. Expressing your own individuality is also useful to create your own personal brand on socials.
 
 ### How to build a reputation as a builder
 
