@@ -56,7 +56,7 @@ This guide will cover these main tracks, however anyone is free to submit a pull
 
 - [Security engineer](#security-engineer)
 - [MEV searcher](#mev-searcher)
-- [Cryptographer](#cryptographer)
+- [Cryptography](#cryptography)
 - [Blockchain data analytics](#blockchain-data-analytics)
 
 #### Application-based
