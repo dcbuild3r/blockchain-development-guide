@@ -1046,17 +1046,240 @@ If you manage to demonstrate mastery of any given skill within web3, then you ar
 
 ## Mastery
 
-Coming soon.
 
-### Learn how to learn
+### Introduction
 
-### How to take notes effectively
+This mastery section will discuss several soft skills that will help you master any skillset. It is vital not to get stuck in the wrong mindset when learning the skills required to become a great blockchain developer. It is not only about going to a few websites, reading course material, working out some problems, and building applications. Various soft skills will assist you during your journey, which often go unnoticed or are ignored.
 
-### How to find mentors
+### Learning how to learn
 
-### Time management / planning
+Many people focus on the skillsets they need to learn and all the information they need to consume. Rarely do people stop to think twice about how to learn effectively so that every minute spent learning any course material yields maximum retention and the time effort is minimized. 
 
-### Mastering your craft
+This section is inspired by Barbara Oakley's book Learning How to Learn.
+
+#### Lesson's from the book
+
+These notes are extracted from [this summary](https://www.allencheng.com/learning-how-to-learn-book-summary-barbara-oakley-terrence-sejnowski-et-al/) of the book. I strongly recommend [reading the book](https://www.amazon.com/Learning-How-Learn-Spending-Studying/dp/0143132547) or taking [Barbara Oakley's Coursera course](https://www.coursera.org/learn/learning-how-to-learn).
+
+1. When You Find Yourself Struggling To Solve A Problem Or Learn Anything New, Try To Relax For A Few Minutes. And Then Try Again Later.
+2. Procrastination gives you instant pleasure, but it hurts you long-term and makes you highly unproductive.
+3. Think in metaphors to learn faster.
+4. Learning has no age. Even adults in their 40s or 50s can learn new stuff!
+5. Sleeping is important for your brain connections to become stronger and sturdier.
+6. Use memory palaces to remember cold hard facts
+7. Excercise is good not only for your body but also for your brain
+8. Neurons are sophisticated tiny computers in your brain
+9. Focus on different aspects while studying a new subject
+
+#### More resources on learning how to learn
+
+- [Barbara Oakley's Coursera course](https://www.coursera.org/learn/learning-how-to-learn)
+- [How to Learn Anything FASTER - Ali Abdaal](https://www.youtube.com/watch?v=unityETmypk&ab_channel=AliAbdaal)
+
+### How to take notes efficiently
+
+When you constantly have to consume lots of learning materials, it is tough to learn it effectively and in a way that your brain can retain it for longer. Suppose you want to master any given topic. It is good to write notes as you're learning, especially in a digital format that you can easily query and reminisce yourself about the material. If you write practical notes, your brain is forced to think about the subject and hand and more easily synthesizes the ideas and learnings.
+
+Content retention is also heightened when you take good notes since your recollection of a subject is better when focusing on the essential parts of any given learning material.
+
+A great book to improve at notetaking is: 
+
+**How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers** 
+
+by Sönke Ahrens
+
+[Amazon link](https://www.amazon.com/gp/product/B09V5M8FR5/ref=x_gr_w_bb_sin?ie=UTF8&tag=x_gr_w_bb_sin-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B09V5M8FR5&SubscriptionId=1MGPYB6YW3HWK55XCGG2)
+
+The book is inspired by the german notetaking method [*zettelkasten*](https://en.wikipedia.org/wiki/Zettelkasten).
+
+**Core principles of How to Take Smart Notes:**
+
+1. Writing is not the outcome of thinking; it is the medium in which thinking takes place
+2. Do your work as if writing is the only thing that matters
+3. Nobody ever starts from scratch
+4. Our tools and techniques are only as valuable as the workflow
+5. Standardization enables creativity
+6. Our work only gets better when exposed to high-quality feedback
+7. Work on multiple, simultaneous projects
+8. Organize your notes by context, not by topic
+9. Always follow the most interesting path
+10. Save contradictory ideas
+
+If you don't want to read the book, you can read a summary of it and try to apply its principles to your personal notetaking approach. - [Link](https://fortelabs.co/blog/how-to-take-smart-notes/)
+
+Next, let's explore different notetaking applications and what they are suitable for.
+
+#### Notion
+
+![](https://images.ctfassets.net/spoqsaf9291f/3URR6bnGgyuzpzRNwtgecf/e37c7dcfabd322a81f926cfffbc7e952/Screen_Shot_2021-09-20_at_6.17.28_PM.png)
+[Notion](https://www.notion.so/) is a great notetaking tool for all sorts of things. Whether it is taking notes on a topic that you are trying to master, managing complex projects with your team, creating a knowledge base, managing your daily tasks, and much more.
+
+##### How to use Notion
+
+Here are some external resources to learn how to use Notion. Feel free to submit a pull request to the guide or the devpill.me site with suggestions on more resources.
+
+- [10X your Productivity as a Developer with Notion - Clever Programmer](https://www.youtube.com/watch?v=9PWaOgql-Ts)
+- [Notion Mastery - Marie Poulin](https://www.youtube.com/playlist?list=PLpzKoBl909Y1s8hS5QpSlamyGqzmMqzDZ)
+- [Keep productive - YouTube](https://www.youtube.com/channel/UCYyaQsm2HyneP9CsIOdihBw)
+- [Notion](https://www.youtube.com/channel/UCoSvlWS5XcwaSzIcbuJ-Ysg)
+- [Civic's unplugged Notion use cases](https://cucrew.notion.site/How-We-Use-Notion-at-Civics-Unplugged-9b4ec2ef829d4b3cb88335cae712fc56)
+
+Self-Development use case:
+- [Gary Sheng's Leadership Blueprint](https://garysbrain.notion.site/garysbrain/Gary-s-Leadership-Blueprint-3020aee8549346c49c2495f5f21dec04)
+
+#### Roam Research
+
+[Roam Research](https://roamresearch.com/) is a notetaking app that leverages the structure of graphs to synthesize and connect different notes and pieces of knowledge by referencing concepts across notes. You can link different ideas in both directions and create mind maps for anything you learn. 
+
+![roam research](https://lawsonblake.com/content/images/2020/08/Roam_Page-2.JPG)
+Roam research is a subscription-based paid application ( `$ '15 per month or `$`165 per year). You can also apply for a scholarship to use Roam for free if you are a researcher, under 22, or experiencing financial distress ([link to apply](https://roamresearch.typeform.com/to/Y8ggm3gR?typeform-source=roamresearch.com)).
+
+It is a great way to create a structure for any learning material, whether it is about Solidity, MEV, DeFi, some protocol design, public goods, or anything else. It is a great way to reference concepts and check where else you have referenced them, and expand on each note you take. 
+
+##### How to use Roam Research
+
+- [Beginner's Guide to Roam Research - Keep Productive](https://www.youtube.com/watch?v=A_7_8AAkV7M)
+- [This Note-Taking App is a Game Changer - Roam Research by Thomas Frank](https://www.youtube.com/watch?v=vxOffM_tVHI&ab_channel=ThomasFrank)
+- [How to Take Better Notes With Roam Research - Lawson Blake](https://lawsonblake.com/roam-research-review/)
+
+#### Obsidian
+
+![Obsidian](https://obsidian.md/images/screenshot.png)
+[Obsidian](https://obsidian.md/) is a free alternative to Roam research that hosts your graphs locally. Some add-on features or licenses can be paid for as a subscription or one-time payment for added functionality. They will also soon release hosted graphs.
+
+##### How to use Obsidian
+
+- [Your Beginner's Guide to Obsidian](https://www.keepproductive.com/blog/obsidian-beginners-guide)
+
+#### Inkdrop
+
+![Inkdrop](https://beta.docs.inkdrop.app/og-cover-image.jpg)
+[Inkdrop](https://www.inkdrop.app/) is a Markdown notetaking application that is highly extensible and focuses on developers. I use it to write all of my articles and the [devpill.me](https://devpill.me/) guide and my [article on L2s](https://dcbuilder.mirror.xyz/QX_ELJBQBm1Iq45ktPsz8pWLZN1C52DmEtH09boZuo0), and some other pieces.
+
+I use the Vim extension for writing using [Vim keybindings](https://github.com/vim/vim); I also use the LaTeX extension to occasionally write math equations and some other plugins for modifying how the application looks.
+
+There is a 30-day free trial for the application. Otherwise, it costs `$ '50 per year or `$`6  per month.
+
+#### Others
+
+For more applications, check out [this article](https://collegeinfogeek.com/best-note-taking-apps/) from College Info Geek comparing different notetaking apps
+
+### Mentorship
+
+Having guidance is extremely important to grow as rapidly as possible and make the most effective use of your time. I want to share some of the lessons I have learned over the past four years of researching blockchain development and web3. I don't want new developers to feel as overwhelmed by the number of possibilities and lack of structured guidance as I did.
+
+In the crypto and broader web3 ecosystems, thought leaders spearhead different missions, values, and goals and drive the industry forward. When you are just starting out, following these leaders and analyzing how they reached their position is an excellent way to understand what you need to do to achieve your own goals within a particular field. If you are interested in creating useful DeFi primitives, then you have to analyze exemplary founders and builders of current as well as the up and coming DeFi protocols; good examples include [Hayden Adams](https://twitter.com/haydenzadams) (Uniswap), [Stani Kulechov](https://twitter.com/StaniKulechov) (Aave), [Robert Leshner](https://twitter.com/rleshner) (Compound), [@scupytrooples](https://twitter.com/scupytrooples) (Alchemix), etc.
+
+#### EthernautDAO
+
+EthernautDAO is a community of builders that tries to convert developers from other fields into blockchain developers through mentorship programs. There are two main types of members in EtheurnautDAO: mentors and mentees (students). Mentors come from different established protocols, DAOs, projects, and companies in the industry and are looking to train and hire skilled developers. The process is relatively simple: a mentor posts an opening for a specific type of mentorship. Students apply. If they get accepted, they get mentorship and often either compensation or the chance to get hired by the company the mentor belongs to.
+
+#### Twitter
+
+The leading platform for news, discourse, education, and interaction within the web3 space is Twitter. Almost everyone interacts on Twitter, and so as someone looking to learn and get mentorship, it is a great place to try and get hired (take a look at the [Getting a job section](https://www.devpill.me/docs/getting-a-job/introduction/)) and accrue [social capital](https://www.devpill.me/docs/social-capital/introduction/). As you build a portfolio that showcases your skills, it will act as your reputation in the space. You can leverage that reputation on Twitter to start working on different projects (getting a job) or interacting with skilled individuals who are generally very willing to help people learn and become better (great to get mentorship).
+
+#### Development bootcamps
+
+Another option for getting valuable guidance is finding a community of people going through the same challenges you are. You will gain access to experienced builders, excellent educational materials, and more development bootcamps and e-learning platforms like the ones listed below.
+
+A non-exhaustive list of learning platforms:
+
+- [Buildspace](https://buildspace.so/) (free)
+- [Encode club](https://www.encode.club/encode-bootcamps) (paid)
+- [Consensys Academy](https://consensys.net/academy/bootcamp/) (expensive bootcamp)
+- [BuidlGuidl](https://buidlguidl.com/) (free)
+- [Learn Web3](https://www.learnweb3.io/) (free)
+- Affiliated (I, dcbuilder, am an advisor):
+  - [Artemis](https://www.artemis.education/) (free / income sharing)
+  - [Crystalize](https://crystalize.dev/) (income sharing)
+
+### Mastery
+
+Mastery of a craft can only be achieved when individuals hone their skills to the utmost and become competent experts. To acquire knowledge of a specific skillset, the individual needs to devote a lot of time and concentrated effort to learn as many intricacies, nuances, and details about their craft. They also need to assimilate that information into their abilities to wield the art necessary to perform it. They need to constantly keep up with the pace of development within that craft to retain their state-of-the-art skills. The context of blockchain development involves:
+Keeping up with the current standard development stacks.
+Looking into newly emerging technologies.
+Developing a deep understanding of the field to critically assess the pros and cons of using a specific technology or architecture. 
+
+Many principles behind mastery and the journey of achieving peak human performance are studied in various areas of study like neurology (for learning-related matters), psychology, physiology, social sciences, self-development studies, and more.
+
+A good entry book that has remained relevant for decades is Robert Green's book 'Mastery'. It details the steps that the most capable people have abided by to achieve greatness and mastery of their craft throughout human history. You can find a good summary of the book's principles [here](https://www.nateliason.com/notes/mastery-robert-greene).
+
+The main sections of the book are:
+
+1. Discovering Your Calling
+2. Submit to Reality: The Ideal Apprenticeship
+3. Absorb the Master's Power: The Mentor Dynamic
+4. See People as they Are: Social Intelligence
+5. Awaken the Dimensional Mind: The Creative-Active
+6. Fuse the Intuitive with the Rational: Mastery
+
+Becoming a master of blockchain development or its specializations is a never-ending process. However, the possibilities for what you can create are endless, and all of its skillsets are highly valuable and sought after. 
+
+I'm personally excited about what the masters of the future will be able to build and how that will enable the future of human coordination, public goods, and regenerative crypto-economics.
+
+#### Rationality
+Rationality is the quest of trying to find the truth systematically. A great book about rationality is '[Rationality: From AI to Zombies](https://intelligence.org/rationality-ai-zombies/)' by Eliezer Yudkowsky (thank you, [Rai](https://twitter.com/0xRaino), for the recommendation).
+
+From the book: "When we talk about rationality, we're generally talking about either epistemic rationality (systematic methods of finding out the truth) or instrumental rationality (systematic methods of making the world more like we would like it to be). We can discuss these in the forms of probability theory and decision theory, but this doesn't fully cover the difficulty of being rational as a human. There is a lot more to rationality than just the formal theories."
+
+The book is comprised of 6 smaller sections:
+- Book I: Map and Territory
+- Book II: How to Actually Change Your Mind
+- Book III: The Machine in the Ghost
+- Book IV: Mere Reality
+- Book V: Mere Goodness
+- Book VI: Becoming Stronger
+
+You can read the sections sequentially as they originally come from blogposts he wrote. Each section goes through different areas of rationality.
+
+### Time management
+
+Time management is vital to becoming an efficient developer, especially in crypto / web3, where there are so many distractions and shiny objects that it is hard to focus on essential tasks. 
+
+#### Planning
+Planning your days ahead of time is essential to maximize productivity as a developer, especially if you are a freelancer or don't have a robust synchronous structure within your organization. Since many web3 developers work remotely and teams coordinate asynchronously using tools like GitHub, Zoom / Google Meets, etc. It is essential to book the times you will spend working on a particular task or area.
+
+I'd recommend planning your day the day before and filling all the necessary tasks as you need them. You will get better at planning the more you do it, as you'll be able to see how it works for you and what things you need to polish out.
+
+I try to schedule everything, from travels to bookings, personal affairs, periods for exercising, eating, reading, learning, working, events, calls, meetings, etc. I spent way too much time procrastinating and just going through the motions, and if I had a system to use my time efficiently, I would not have lost so much time in vain.
+
+I've recently started using [Cron](https://cron.com/), a calendar interface that can hook up to Google accounts. The application aggregates all of your connected Google accounts' calendars. It sends notifications for meetings early, the UI/UX is impressive, booking new events is very intuitive, and it allows you to send invites from any account.
+
+For scheduling meetings, I recommend using [Calendly](https://calendly.com/) or similar services that allow you to give other people links with pre-filled slots with your availability. The people you want to meet with can use to book a specific time with you; the event will subsequently appear in your calendar app of choice.
+
+To get deeper into planning/scheduling and developing high performance, I recommend reading these two books, which are my personal favorites:
+
+- [The Power of Habit](https://www.shortform.com/summary/the-power-of-habit-summary-charles-duhigg?utm_source=google&utm_medium=cpc) - Charles Duhigg
+- [High Performance Habits](https://www.amazon.com/High-Performance-Habits-Extraordinary-People/dp/1401952852) - Brendon Burchard
+
+#### Project management
+
+As a software developer, you're going to work with many different people when you join a team or try to build a product yourself - from designers, front/back end devs, DevOps, data engineers to lawyers, product managers, etc. There will be systems set in place in the most mature developer environments to coordinate as an organization. Popular methods are [Agile](https://www.atlassian.com/agile#:~:text=Agile%20is%20an%20iterative%20approach,small%2C%20but%20consumable%2C%20increments.) and [SCRUM](https://en.wikipedia.org/wiki/Scrum_(software_development)). Popular apps for managing all of these processes, tasks, and interactions include tools like Asana, Linear, Jira, Trello, Notion, etc.
+
+### Self-development
+
+To reach your peak, you need to create a sustainable set of habits that will allow you to keep working hard consistently. Since we are all human beings, we need to keep our bodies in check, as they are the hosts for our brains responsible for producing bug-free code. Note that this section is not professional advice as I am not an expert in these fields, and I am not a licensed advisor. If you want guidance in any areas covered, please consult with an expert trainer, nutritionist, therapist, coach, etc.
+
+
+#### Working out
+
+Exercise is an integral part of life as it allows the body to maintain physical fitness, health, and overall wellness. Developers are usually portrayed in modern culture as people who do not exercise very often, as sedentary people who sit on a chair all day and do not prioritize their health. It is essential to be active throughout the day even though we are programming most of the time. I recommend using a standing desk that you can adjust for any height. You can stand up and keep coding when you are tired of sitting. Some individuals also get a small walking board underneath the table to walk while coding. 
+
+Another good technique is a slight modification of the Pomodoro technique that replaces the break period with a short exercise period. The most prevalent version consists of 45 minutes of focused work and a 15-minute workout. I like to alternate activities during the workout period.
+
+Other positive effects of exercising are clearer thinking as the brain has more oxygen inflow, stronger immune, cardiovascular system, and more. For more guidance on achieving physical fitness and what exercises to do, please consult with an expert.
+
+#### Nutrition
+
+Nutrition is an area that is very easy to overlook, especially when an individual is young and their metabolism can deal with living an unhealthy lifestyle. 
+
+Eating the right amounts of food within a varied diet is an integral part of a healthy lifestyle, and everyone should take it seriously. For more information, please consult with a nutritionist or dietary expert or do your research as nutrition varies a lot per individual, and I'm not qualified to give advice.
+
+### Other
+
+Self-development is a very wide topic and there's a lot more to improve than health, fitness and nutrition. You can improve your mindset, define your own values and create systems that will allow you to uphold those values as you go about life, there's spiritual discovery, learning about various aspects of life, etc. Most of these other topics although significant do not have a direct impact on your performance as a developer, so I'll refrain from talking about them. Feel free to suggest any changes to this section via GitHub pull request.
+
+## Social Capital
 
 ### Introduction
 
@@ -1104,7 +1327,7 @@ If you talk to people with expertise in the fields that you want to become skill
 
 - people trying to learn the same things you are learning
 
-It is good to share ideas and have two way feedback on any topic you are learning from other people learning the same material you are, especially if they are more experienced than you are. Another good reason to learn in groups (ideally pairs) is that teaching is the best way to solidify your own knowledge as when you have to explain a complex topic simply, you need to have a good understanding of any given topic so that you are capable of explaining it. More on this in the [Mastery](https://www.devpill.me/docs/mastery/) section.
+It is good to share ideas and have two way feedback on any topic you are learning from other people learning the same material you are, especially if they are more experienced than you are. Another good reason to learn in groups (ideally pairs) is that teaching is the best way to solidify your own knowledge as when you have to explain a complex topic simply, you need to have a good understanding of any given topic so that you are capable of explaining it. More on this in the [Mastery](https://www.devpill.me/docs/mastery/introduction) section.
 
 - people building other primitives in the web3/crypto space (expand horizons)
 
@@ -1129,12 +1352,13 @@ if there relevant events happening within the space that you are interested in, 
 - shitpost (express your own personality / be yourself) for engagement (grows your network whilst having fun):
 Be creative, development doesn't need to be everything you talk about, many also use social platforms to make friends and have fun, so you can also do funny content, light-hearted threads on any given topic, post pictures of your dog, or whatever you want. Expressing your own individuality is also useful to create your own personal brand on socials.
 
-### How to build a reputation as a builder
-
-### Leverage your connections to grow
-
-### Give back to the community
-
 ## Conclusion
 
+Thank you for checking out the blockchain development guide, if there is any content you'd like to see getting added, please check out the [contributors](#contributors) section and suggest it there. The goal is to make this guide and [devpill.me](https://devpill.me/) the best blockchain development guide out there. Thank you for your support. 
+
 ## Special thanks
+
+Special thanks to all the contributors:
+
+- [@protolambda](https://twitter.com/protolambda) - author of the [Ethereum core development section](https://www.devpill.me/docs/core-development/introduction/)
+- [@0xjepsen](https://twitter.com/0xjepsen) - author of the [cryptography section](https://www.devpill.me/docs/cryptography/introduction/)
