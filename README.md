@@ -569,6 +569,7 @@ Understanding the ins and outs of the EVM is crucial for building highly optimiz
 
 For a comprehensive EVM deepdive, I suggest these resources:
 
+- [Ethereum Explained: The EVM](https://www.youtube.com/watch?v=kCswGz9naZg&ab_channel=JordanMcKinney)
 - [The EVM Handbook](https://noxx3xxon.notion.site/noxx3xxon/The-EVM-Handbook-bb38e175cc404111a391907c4975426d)
 - [EVM development starter kit](https://freddycoen.medium.com/evm-starter-kit-1790bcc992ef)
 - Read Chapter 13 (EVM) of [The Ethereum Book](https://github.com/ethereumbook/ethereumbook/blob/develop/13evm.asciidoc)
@@ -729,7 +730,8 @@ Coming soon
 
 #### General Learning
 
-There are many topics to learn about in core-development, one can specialize in any area. Here is a selection of learning-resources 
+There are many topics to learn about in core-development, one can specialize in any area. Here is a selection of learning-resources.
+
 Basic:
 - Merkle trees:
   - [Ethereum execution-layer Merkle Patricia Tree walkthrough](https://dzone.com/articles/ethereum-yellow-paper-walkthrough-27)
