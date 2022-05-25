@@ -9,9 +9,9 @@ I’m trying to gather resources to fund the development of this public good blo
 - [Mirror NFTs](https://dcbuilder.mirror.xyz/PLNPOmKkYaP14kJa5A5pJgyIlg4dWHpjDiHS7BGC7J4)
 - [Gitcoin grants](https://gitcoin.co/grants/4975/devpillme-a-public-good-blockchain-development-gu) (Gitcoin grants round 13 goes from march 9th - 24th, happens recurrently every 3 months)
 
-## Contributors
+## Community
 
-If you want to contribute, please join [this Telegram group](https://t.me/devpillme) that I created for collaborators so that we can better coordinate and distribute tasks. Eventually we will migrate to a more suitable Discord/Forum setup.
+If you want to contribute to devpill or to discuss any of the topics and resources found in the guide. Feel free to join our [Discord](https://discord.gg/VV28M9tD), and follow us on [Twitter](https://twitter.com/devpillme) and [Lenster](https://lenster.xyz/u/devpillme.lens).
 
 ## Introduction
 
