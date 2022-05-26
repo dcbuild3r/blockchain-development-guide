@@ -1190,7 +1190,8 @@ Another option for getting valuable guidance is finding a community of people go
 
 A non-exhaustive list of learning platforms:
 
-- [Buildspace](https://buildspace.so/) (free)
+- [Buildspace](https://buildspace.com/) (free)
+- [Cadena] (https://cadena.dev/) (free)
 - [Encode club](https://www.encode.club/encode-bootcamps) (paid)
 - [Consensys Academy](https://consensys.net/academy/bootcamp/) (expensive bootcamp)
 - [BuidlGuidl](https://buidlguidl.com/) (free)
