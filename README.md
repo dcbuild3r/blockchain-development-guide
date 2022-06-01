@@ -13,6 +13,8 @@ I’m trying to gather resources to fund the development of this public good blo
 
 If you want to contribute to devpill or to discuss any of the topics and resources found in the guide. Feel free to join our [Discord](https://discord.gg/VV28M9tD), and follow us on [Twitter](https://twitter.com/devpillme) and [Lenster](https://lenster.xyz/u/devpillme.lens).
 
+This repo will not reflect any changes on the [devpill.me website](http://devpill.me/), the repo for the site can be found [here](https://github.com/dcbuild3r/devpill.me) and content with the corresponding markdown files is located in [this directory](https://github.com/dcbuild3r/devpill.me/tree/9f87bc7c77a5ec897c01f7cfbd9eae8842c260ac/content/en/docs). Please submit PRs there instead as it makes it easier for me to process and review.
+
 ## Introduction
 
 Nowadays there are countless well-made resources on how to learn blockchain development of all kinds and with different specializations in mind, however, it is still very hard to get guidance and personalized suggestions based on your interests. I am writing this guide in order to provide an aggregator of all the resources that I've found over the years, plus give some opinionated commentary on how to approach them and how to use them in order to maximize learning and practical understanding in order to get building cool things in the space as soon as possible.
