@@ -25,19 +25,23 @@ I really want this guide to become a community-sourced public good that everyone
 
 There are two main categories in my mind, either you build the infrastructure that runs blockchain-based networks or you build applications that run on top of these decentralized and permissionless networks. Of course, this differentiation doesn't encompass all types of development on blockchains, but it is a good way to get started. 
 
+#### Core blockchain development
+
 By blockchain infrastructure, people usually mean client implementations of blockchain protocols that nodes or validators run to keep the chains running. These clients are usually focused on distributed ledger technology, networking, virtual machines, and various other low-level types of engineering. The client is what enforces the rules of the blockchain protocol, runs the consensus mechanism, that executes all transactions in the network and makes sure all nodes are in sync, and more. This is also known as core blockchain development, which is not what most devs picture when thinking about blockchain or web3 development in general. There are various niches within blockchain development itself as well; you can focus on improving execution capabilities with technologies like rollups, validiums, or volitions, you can improve decentralization and security guarantees by innovating on the consensus layer of the protocol, etc.
 
-There's also blockchain infrastructure that supports the application layer by providing APIs to access blockchain data like oracles for smart contracts, indexing services for back ends, libraries that allow you to call and listen to smart contract events, decentralized storage services, and more.
+#### Blockchain API
+
+There's also blockchain infrastructure that supports the application layer by providing APIs to access blockchain data like oracles for smart contracts, indexing services for back ends, libraries that allow you to call and listen to smart contract events, decentralized storage services, and more. There are applications that aggregate data from different smart contracts, transactions, and events on the blockchain to provide useful insight, these apps are mostly centered around data analysis and are not necessarily decentralized, but require an understanding of the underlying blockchain-based technologies.
+
+#### Blockchain application layer
 
 The most popular type of blockchain development is on top of the application layer. Building decentralized applications (Dapps) can take many different forms, but it usually involves a smart contract and a user interface that interacts with that smart contract and listens to changes in the state of the blockchain. These applications can serve various use cases and can be used to build decentralized financial services, games, and so much more.
-
-There are also applications that aggregate data from different smart contracts, transactions, and events on the blockchain to provide useful insight, these apps are mostly centered around data analysis and are not necessarily decentralized, but require an understanding of the underlying blockchain-based technologies.
 
 If these concepts are completely foreign to you I suggest reading the how to get started section first, or Google the words you may not understand.
 
 ### Specializations
 
-There are many different specializations within blockchain development, each requires a different set of skills, however a general understanding of distributed systems, basic cryptography, and knowing how smart contracts operate is required as a foundation for all of them. In this guide I'll try to provide a general overview of each of them as well as give the best guidance I can provide on the resources learners should prioritize and in which order they should take them. There are many roles that I'm not as familiarized with, so feel free to suggest pull requests with changes or DM with suggestions.
+There are many different specializations within blockchain development, each requires a different set of skills, however a general understanding of distributed systems, basic cryptography, and knowing how smart contracts operate is required as a foundation for all of them. In this guide I'll try to provide a general overview of each of them, as well as give the best guidance I can provide on the resources learners should prioritize and in which order they should take them. There are many roles that I'm not as familiarized with, so feel free to suggest pull requests with changes or DM with suggestions.
 
 #### Skill-based
 
@@ -80,6 +84,7 @@ Another way to separate types of blockchain development is not based on the unde
 - [Getting a job](#getting-a-job)
 - [Social Capital](#social-capital)
 - [Mastery](#mastery)
+- [Community](#community)
 
 ## How to get started?
 
@@ -91,7 +96,7 @@ If you have a background in computer science, mathematics, or any related field,
 
 ### General foundation
 
-In order to get started with blockchain development on Ethereum, one must first get started with understanding how blockchains work in order to build a mental model of how each moving piece works and to get an understanding of the design principles which will govern your development experience.
+In order to get started with blockchain development, one must first get started with understanding how blockchains work in order to build a mental model of how each moving piece works and to get an understanding of the design principles which will govern your development experience.
 
 #### Blockchains
 
@@ -117,7 +122,7 @@ Since this is a guide about blockchain development on Ethereum, it is required t
 
 A good way to get started with how Ethereum works is to watch [Austin Griffith](https://twitter.com/austingriffith)'s [ETH.BUILD YouTube playlist](https://www.youtube.com/playlist?list=PLJz1HruEnenCXH7KW7wBCEBnBLOVkiqIi) where he illustrates how various parts of the Ethereum blockchain work.
 
-"In the Ethereum universe, there is a single, canonical computer (called the Ethereum Virtual Machine, or EVM) whose state everyone on the Ethereum network agrees on. Everyone who participates in the Ethereum network (every Ethereum node) keeps a copy of the state of this computer. Additionally, any participant can broadcast a request for this computer to perform arbitrary computation. Whenever such a request is broadcast, other participants on the network verify, validate, and carry out ("execute") the computation. This execution causes a state change in the EVM, which is committed and propagated throughout the entire network." (source: [ethereum.org documentation](https://ethereum.org/en/developers/docs))
+"In the Ethereum universe, there is a single, canonical Turing-complete(computational universal) computer (called the Ethereum Virtual Machine, or EVM) whose state everyone on the Ethereum network agrees on. Everyone who participates in the Ethereum network (every Ethereum node) keeps a copy of the state of this computer. Additionally, any participant can broadcast a request for this computer to perform arbitrary computation. Whenever such a request is broadcast, other participants on the network verify, validate, and carry out ("execute") the computation. This execution causes a state change in the EVM, which is committed and propagated throughout the entire network." (source: [ethereum.org documentation](https://ethereum.org/en/developers/docs))
 
 In order to learn the basics of Ethereum, go through the [ethereum.org documentation](https://ethereum.org/en/developers/docs). Here are links for each section:
 
@@ -160,7 +165,7 @@ Here's how a [simple counter program](https://solidity-by-example.org/first-app/
 pragma solidity ^0.8.10;
 
 contract Counter {
-    uint public count;
+    uint private count;
 
     // Function to get the current count
     function get() public view returns (uint) {
@@ -179,7 +184,7 @@ contract Counter {
 }
 ```
 
-In the beginning, you declare the version of Solidity you are using the `pragma solidity + version` keyword. To indicate the creation of a contract you write it using the `contract ContractName {}` form. Within the contract curly brackets, the logic of the program is declared. We then declare a simple variable with the name `count` with unsigned integer type (meaning it can only hold positive integers). Afterward, we declare three different functions, one to retrieve the value held inside of the `count` variable, one to increase the variable's value by one, and the last one to decrement its value. The `public` keyword specifies that the function can be called by any address on the blockchain (be it a smart contract or a user-owned account). The `view` modifier specifies that the function doesn't alter the state within the contract (it only reads values already available). The `returns` keyword is used to specify the type of the object that is returned back by the function, unsigned integer type in the case of the `get()` function. Everything which is written after a `//` is considered a comment and is ignored by the Solidity compiler. Comments are used to make the code more readable and manageable, which is especially helpful if you are working with teams or revisit a codebase after some time. It also acts as documentation for what the code it is doing.
+In the beginning, you declare the version of Solidity you are using the `pragma solidity + version` keyword. To indicate the creation of a contract you write it using the `contract ContractName {}` form. Within the contract curly brackets, the logic of the program is declared. We then declare a simple private variable with the name `count` with unsigned integer type (meaning it can only hold positive integers). Private functions and state variables are only visible for the contract they are defined in and not in derived contracts. Afterward, we declare three different functions, one to retrieve the value held inside of the `count` variable, one to increase the variable's value by one, and the last one to decrement its value. The `public` keyword specifies that the function can be called by any address on the blockchain (be it a smart contract or a user-owned account). The `view` modifier specifies that the function doesn't alter the state within the contract (it only reads values already available). The `returns` keyword is used to specify the type of the object that is returned back by the function, unsigned integer type in the case of the `get()` function. Everything which is written after a `//` is considered a comment and is ignored by the Solidity compiler. Comments are used to make the code more readable and manageable, which is especially helpful if you are working with teams or revisit a codebase after some time. It also acts as documentation for what the code it is doing.
 
 **How do I compile and deploy my first contract?**
 
@@ -310,6 +315,7 @@ I recommend going to the [Typescript documentation](https://www.typescriptlang.o
 [Moralis](https://moralis.io) is a web3 development platform that helps abstract away the pain of having to build all the backend infrastructure needed to run web3 applications from scratch. Moralis provides an easy-to-use API that lets you fetch any data that you want from various blockchains, handles web3 user authentication, allows you to listen to smart contract events in real time, gives you access to historical data, has support for cloud functions, and much more. If you've never worked with blockchains it is the best way to get onboarded and start building web3 applications, as the Moralis SDK is intuitive to use for anyone that has experience with JavaScript/TypeScript. 
 
 **Learning resources**
+
 - [Moralis documentation](https://docs.moralis.io/moralis-server/getting-started)
 - [Moralis YT channel](https://www.youtube.com/c/MoralisWeb3)
 
@@ -336,7 +342,6 @@ One of the most popular tools to prototype and design websites is Figma, so ever
 
 **Learning resources**
 - [freeCodeCamp Figma YT course](https://youtu.be/jwCmIBJ8Jtc)
-- 
 
 #### Web3 templates
 
@@ -500,6 +505,9 @@ The reason why Foundry is getting a lot of popularity and it is so important, is
 
 [Hardhat](https://hardhat.org/) is the Ethereum development library that’s the most widely used across the ecosystem and is the standard in most production codebases like Aave, Uniswap, and many others. Usually, all the deploy scripts, migration files, automation scripts, etc are written using Hardhat and their tooling suite. It is a javascript library (that has Typescript support). Recently the Hardhat team announced that they are moving their infrastructure to Rust as most of the tooling ecosystem is moving to use it do its performance and security.
 
+**Truffle Suite**
+
+[Truffle Suite](https://trufflesuite.com/) is a suite of tools developed by Consensys to locally test smart contracts by deploying them on a local instance of the Ethereum blockchain, mocking user addresses using the Ganache library, writing tests using Truffle, and creating on-chain data pipelines for user interfaces using Drizzle. It was one of the first complete Ethereum developer tooling ecosystems that were released, but they’ve fallen out of favor in recent years as libraries like Hardhat overtook it.
 
 **Dapptools**
 
@@ -512,11 +520,6 @@ There are 4 key elements in Dapptools:
 - **ethsign** - Sign Ethereum transactions from a local Keystore or hardware wallet.
 
 A cool innovation done by app tools was the hEVM which is an EVM implementation written in Haskell (a functional programming language) that allows to symbolically execute Solidity code and formally verify the results of the resulting bytecode (opcode operations). This feature was later adopted by Foundry, including many others that were first provided by Dapptools.
-
-
-**Truffle Suite**
-
-[Truffle Suite](https://trufflesuite.com/) is a suite of tools developed by Consensys to locally test smart contracts by deploying them on a local instance of the Ethereum blockchain, mocking user addresses using the Ganache library, writing tests using Truffle, and creating on-chain data pipelines for user interfaces using Drizzle. It was one of the first complete Ethereum developer tooling ecosystems that were released, but they’ve fallen out of favor in recent years as libraries like Hardhat overtook it.
 
 #### Design patterns
 
@@ -625,9 +628,9 @@ A very popular service is [TheGraph](https://thegraph.com/en/). TheGraph is a de
 
 An upcoming service and simpler alternative to TheGraph is [Covalent](https://www.covalenthq.com/). Its API allows you to pull detailed, historical and granular data from multiple blockchains with no code. It has a rich palette of endpoints serving data from categories including balances, NFTs, and DeFi. The APIs provide data for several different blockchains like Ethereum, Polygon, Avalanche and is currently free to use. In order to learn more, check out [their documentation](https://www.covalenthq.com/docs/) and [API docs](https://www.covalenthq.com/docs/api/#/0/0/USD/1). They have an active [youtube channel](https://www.youtube.com/channel/UCGn-T9qPiXAx490Wr6WPbOw) as well with a [playlist on building web3 projects](https://www.youtube.com/playlist?list=PL4d9xIzK1us3vqIFYqcS005qSVuq_AESa) using Covalent.
 
-**Nodes**
+**Nodes as service**
 
-One of the most common ways to query data from the blockchain is by calling RPC endpoints of nodes that are syncing the full-state of the blockchain. A node runs the Ethereum blockchain, has all of its state, and syncs periodically every single time a new block appears. You can run your own node on consumer hardware, but it is unscalable if you want to use those nodes for querying data for massive applications as you'd need to build your own DevOps pipelines in order to scale to your needs accordingly. That's why most developers use a third-party node provider like [Alchemy](https://www.alchemy.com/) or [Infura](https://infura.io/). You can call these APIs by using web3 libraries like [ethers.js](https://docs.ethers.io/v5/), [web3.js](https://web3js.readthedocs.io/en/v1.7.0/) or myriad others.
+One of the most common ways to query data from the blockchain is by calling RPC endpoints of nodes that are syncing the full-state of the blockchain. A node runs the Ethereum blockchain, has all of its state, and syncs periodically every single time a new block appears. You can run your own node on consumer hardware, but it is unscalable if you want to use those nodes for querying data for massive applications as you'd need to build your own DevOps pipelines in order to scale to your needs accordingly. That's why most developers use a third-party node provider like [Alchemy](https://www.alchemy.com/), [Nodereal](https://nodereal.io), or [Infura](https://infura.io/). You can call these APIs by using web3 libraries like [ethers.js](https://docs.ethers.io/v5/), [web3.js](https://web3js.readthedocs.io/en/v1.7.0/) or myriad others.
 
 **Moralis**
 
