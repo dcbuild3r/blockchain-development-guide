@@ -11,7 +11,7 @@ I’m trying to gather resources to fund the development of this public good blo
 
 ## Community
 
-If you want to contribute to devpill or to discuss any of the topics and resources found in the guide. Feel free to join our [Discord](https://discord.gg/VV28M9tD), and follow us on [Twitter](https://twitter.com/devpillme) and [Lenster](https://lenster.xyz/u/devpillme.lens).
+If you want to contribute to devpill or to discuss any of the topics and resources found in the guide. Feel free to join our [Discord](https://discord.gg/devpillme), and follow us on [Twitter](https://twitter.com/devpillme) and [Lenster](https://lenster.xyz/u/devpillme.lens).
 
 This repo will not reflect any changes on the [devpill.me website](http://devpill.me/), the repo for the site can be found [here](https://github.com/dcbuild3r/devpill.me) and content with the corresponding markdown files is located in [this directory](https://github.com/dcbuild3r/devpill.me/tree/9f87bc7c77a5ec897c01f7cfbd9eae8842c260ac/content/en/docs). Please submit PRs there instead as it makes it easier for me to process and review.
 
