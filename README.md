@@ -1,3 +1,5 @@
+# Disclaimer: this repo is not maintained with up to date content. Please visit [devpill.me](https://devpill.me/) to read the newest version of this guide.
+
 # DevPill.me - A Public Good Blockchain Development Guide
 
 ![blockchain development guide NFT](./images/blockchain_development_guide.jpg)
