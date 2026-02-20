@@ -1049,6 +1049,7 @@ The two most used platforms to find crypto/web3 jobs are Twitter and a few selec
 - [useweb3 jobs](https://useweb3.xyz/jobs)
 - [web3 board](https://web3board.io/)
 - [defi jobs](https://defi.jobs/)
+- [sailonchain](https://sailonchain.com/)
 
 
 ### Twitter
